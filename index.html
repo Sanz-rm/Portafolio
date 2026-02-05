@@ -9,6 +9,10 @@
       content="Portfolio de Manuel Sanz Romero: proyectos, experiencia, formación, certificados y contacto."
     />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
   </head>
 
   <body>
@@ -16,12 +20,6 @@
 
     <header class="header">
       <div class="container header__inner">
-        <a class="brand" href="#top" aria-label="Ir al inicio">
-          <span class="brand__logo">{"</span>
-          <span class="brand__text">Manuel</span>
-          <span class="brand__logo">"}</span>
-        </a>
-
         <nav class="nav" aria-label="Navegación principal">
           <a href="#about">Sobre mí</a>
           <a href="#experience">Experiencia</a>
@@ -68,62 +66,22 @@
               >
             </div>
 
-            <div class="meta meta--folio">
-              <div class="meta__item">
-                <span class="meta__label">Ubicación</span>
-                <span class="meta__value"
-                  >San Sebastián de los Reyes, Madrid</span
-                >
-              </div>
-              <div class="meta__item">
-                <span class="meta__label">Email</span>
-                <a class="meta__value" href="mailto:sanzromerom@gmail.com"
-                  >sanzromerom@gmail.com</a
-                >
-              </div>
-              <div class="meta__item">
-                <span class="meta__label">Teléfono</span>
-                <a class="meta__value" href="tel:+34634567340"
-                  >+34 634 567 340</a
-                >
-              </div>
-            </div>
-
-            <div class="meta meta--folio" style="margin-top: 10px">
-              <div class="meta__item">
-                <span class="meta__label">LinkedIn</span>
-                <a
-                  class="meta__value"
-                  href="https://www.linkedin.com/in/manuel-sanz-romero-6a8797320/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  linkedin.com/in/manuel-sanz-romero
-                </a>
-              </div>
-              <div class="meta__item">
-                <span class="meta__label">GitHub</span>
-                <a
-                  class="meta__value"
-                  href="https://github.com/Sanz-rm"
-                  target="_blank"
-                  rel="noopener"
-                  >github.com/Sanz-rm</a
-                >
-              </div>
-              <div class="meta__item">
-                <span class="meta__label">Idiomas</span>
-                <span class="meta__value"
-                  >Español (nativo) · Inglés (técnico)</span
-                >
-              </div>
+            <div class="social-links" data-aos="fade-up" data-aos-delay="600">
+              <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" aria-label="LinkedIn"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+              <a href="#" aria-label="Dribbble"
+                ><i class="bi bi-dribbble"></i
+              ></a>
             </div>
           </div>
 
           <div class="hero__photo hero__photo--folio">
             <div class="hero__imageWrap">
               <img
-                src="assets/foto_perfil_blanco.jpg"
+                src="assets/foto_perfil_oscuro.png"
                 alt="Foto de Manuel Sanz Romero"
               />
 
@@ -248,9 +206,7 @@
                   </h3>
                   <span class="muted">Oct 2021 — Dic 2021</span>
                 </div>
-                <p>
-                  - Configuración de equipos con IVANTI y Directorio Activo.
-                </p>
+                <p>- Configuración de equipos con IVANTI y Directorio Activo.</p>
               </div>
             </article>
           </div>
@@ -279,9 +235,7 @@
 
             <article class="card">
               <h3>CFGM Sistemas Microinformáticos y Redes</h3>
-              <p class="muted">
-                IES Virgen de la Paz (Alcobendas) · 2019 — 2021
-              </p>
+              <p class="muted">IES Virgen de la Paz (Alcobendas) · 2019 — 2021</p>
               <p>Base sólida en sistemas, soporte y redes.</p>
             </article>
           </div>
@@ -616,12 +570,7 @@
             <form class="form" action="#" method="post">
               <label>
                 Nombre
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Tu nombre"
-                  required
-                />
+                <input type="text" name="name" placeholder="Tu nombre" required />
               </label>
 
               <label>
@@ -646,8 +595,8 @@
 
               <button class="btn btn--primary" type="submit">Enviar</button>
               <p class="muted small">
-                *Este formulario no envía nada sin backend. Si quieres, te lo
-                conecto a EmailJS o Formspree.
+                *Este formulario no envía nada sin backend. Si quieres, te lo conecto
+                a EmailJS o Formspree.
               </p>
             </form>
           </div>
@@ -657,9 +606,7 @@
 
     <footer class="footer">
       <div class="container footer__inner">
-        <p>
-          © <span id="year"></span> Manuel Sanz Romero. Hecho con HTML + CSS.
-        </p>
+        <p>© <span id="year"></span> Manuel Sanz Romero. Hecho con HTML + CSS.</p>
         <p class="muted">San Sebastián de los Reyes, Madrid</p>
       </div>
     </footer>
@@ -674,11 +621,10 @@
       let charIndex = 0;
       let deleting = false;
 
-      // Ajusta estos valores para ir más lento/rápido
-      const SPEED_TYPE = 110; // antes 70 (escritura)
-      const SPEED_DELETE = 70; // antes 40 (borrado)
-      const PAUSE_END = 1500; // antes 1100 (pausa al completar palabra)
-      const PAUSE_SWITCH = 450; // antes 250 (pausa al cambiar de palabra)
+      const SPEED_TYPE = 110;
+      const SPEED_DELETE = 70;
+      const PAUSE_END = 1500;
+      const PAUSE_SWITCH = 450;
 
       function tick() {
         const current = roles[roleIndex];

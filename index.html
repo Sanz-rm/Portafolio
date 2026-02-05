@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manuel Sanz Romero | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio de Manuel Sanz Romero: proyectos, experiencia, formación, certificados y contacto."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+
+    <header class="header">
+      <div class="container header__inner">
+        <a class="brand" href="#top" aria-label="Ir al inicio">
+          <span class="brand__logo">{"</span>
+          <span class="brand__text">Manuel</span>
+          <span class="brand__logo">"}</span>
+        </a>
+
+        <nav class="nav" aria-label="Navegación principal">
+          <a href="#about">Sobre mí</a>
+          <a href="#experience">Experiencia</a>
+          <a href="#education">Educación</a>
+          <a href="#certs">Certificados</a>
+          <a href="#projects">Proyectos</a>
+          <a href="#skills">Skills</a>
+          <a class="nav__cta" href="#contact">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section id="top" class="hero hero--folio">
+        <div class="container hero__grid hero__grid--folio">
+          <div class="hero__content hero__content--folio">
+            <p class="badge badge--folio">Junior Developer · Java · Web</p>
+
+            <h1 class="hero__title">
+              Hola, soy <span class="accent">Manuel</span><br />
+              <span class="accent">Sanz Romero</span>
+            </h1>
+
+            <p class="hero__typing">
+              <span class="muted">Desarrollador </span>
+              <span id="typing" class="typing"></span
+              ><span class="caret" aria-hidden="true">|</span>
+            </p>
+
+            <p class="lead lead--folio">
+              Desarrollador con ganas de aprender continuamente. Me gusta asumir
+              responsabilidades, trabajar en equipo y construir soluciones
+              claras, mantenibles y con buen diseño.
+            </p>
+
+            <div class="hero__actions hero__actions--folio">
+              <a class="btn btn--primary" href="#projects">Ver proyectos</a>
+              <a class="btn btn--ghost" href="#contact">Contactar</a>
+              <a
+                class="btn btn--text"
+                href="assets/Manuel_Sanz_Romero_CV_2026.pdf"
+                target="_blank"
+                rel="noopener"
+                >Descargar CV</a
+              >
+            </div>
+
+            <div class="meta meta--folio">
+              <div class="meta__item">
+                <span class="meta__label">Ubicación</span>
+                <span class="meta__value"
+                  >San Sebastián de los Reyes, Madrid</span
+                >
+              </div>
+              <div class="meta__item">
+                <span class="meta__label">Email</span>
+                <a class="meta__value" href="mailto:sanzromerom@gmail.com"
+                  >sanzromerom@gmail.com</a
+                >
+              </div>
+              <div class="meta__item">
+                <span class="meta__label">Teléfono</span>
+                <a class="meta__value" href="tel:+34634567340"
+                  >+34 634 567 340</a
+                >
+              </div>
+            </div>
+
+            <div class="meta meta--folio" style="margin-top: 10px">
+              <div class="meta__item">
+                <span class="meta__label">LinkedIn</span>
+                <a
+                  class="meta__value"
+                  href="https://www.linkedin.com/in/manuel-sanz-romero-6a8797320/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  linkedin.com/in/manuel-sanz-romero
+                </a>
+              </div>
+              <div class="meta__item">
+                <span class="meta__label">GitHub</span>
+                <a
+                  class="meta__value"
+                  href="https://github.com/Sanz-rm"
+                  target="_blank"
+                  rel="noopener"
+                  >github.com/Sanz-rm</a
+                >
+              </div>
+              <div class="meta__item">
+                <span class="meta__label">Idiomas</span>
+                <span class="meta__value"
+                  >Español (nativo) · Inglés (técnico)</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__photo hero__photo--folio">
+            <div class="hero__imageWrap">
+              <img
+                src="assets/foto_perfil_blanco.jpg"
+                alt="Foto de Manuel Sanz Romero"
+              />
+
+              <!-- Notas flotantes -->
+              <div class="note note--design float1">
+                <span class="note__icon">🎨</span
+                ><span class="note__text">Design</span>
+              </div>
+              <div class="note note--code float2">
+                <span class="note__icon">&lt;/&gt;</span
+                ><span class="note__text">Code</span>
+              </div>
+              <div class="note note--ideas float3">
+                <span class="note__icon">💡</span
+                ><span class="note__text">Ideas</span>
+              </div>
+            </div>
+
+            <div class="hero__photoCard hero__photoCard--folio">
+              <p class="hero__photoTitle">Disponible para proyectos</p>
+              <p class="hero__photoText">Java · APIs · Web</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>Sobre mí</h2>
+            <p>
+              Soy una persona ambiciosa y con ganas de aprender continuamente.
+              Me gusta asumir nuevas responsabilidades, aprender de forma
+              proactiva y aportar buen ambiente al equipo.
+            </p>
+          </div>
+
+          <div class="cards cards--3">
+            <article class="card">
+              <h3>Lo que hago</h3>
+              <p>
+                Desarrollo y mantenimiento de servicios (REST/SOAP), soporte a
+                producción, pruebas de APIs y trabajo con BBDD.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>Cómo trabajo</h3>
+              <p>
+                Me enfoco en robustez, mantenibilidad, documentación clara y
+                comunicación con el equipo.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>En qué me apoyo</h3>
+              <p>
+                Git/GitLab, pipelines, testing con Postman/SoapUI y mejora
+                continua con métricas e informes.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="section section--alt">
+        <div class="container">
+          <div class="section__head">
+            <h2>Experiencia</h2>
+            <p>Lo más reciente primero.</p>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <div class="timeline__top">
+                  <h3>
+                    VILT (Madrid) · Desarrollador Backend Java (Consultor
+                    Técnico)
+                  </h3>
+                  <span class="muted">Oct 2024 — Actualidad</span>
+                </div>
+                <p>
+                  - Desarrollo y mantenimiento de servicios Java (REST/SOAP)
+                  mejorando escalabilidad y mantenibilidad.<br />
+                  - Soporte a producción: análisis de logs/trazas, incidencias y
+                  seguimiento de batches/reprocesos.<br />
+                  - Pruebas y validación de APIs con Postman y SoapUI.<br />
+                  - Consultas y soporte de datos en Oracle (SQL) y DB2
+                  (SPUFI).<br />
+                  - Despliegues con GitLab + pipelines en Jenkins; baselines en
+                  Serena Dimensions.<br />
+                  - Migración de proyectos de Serena Dimensions a GitLab
+                  (análisis, informes y comparativas .jar/.war).
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <div class="timeline__top">
+                  <h3>
+                    EVIDEN - ATOS (Madrid) · Prácticas Desarrollador Full Stack
+                  </h3>
+                  <span class="muted">Abr 2024 — Jun 2024</span>
+                </div>
+                <p>
+                  - Bootcamp intensivo + proyecto en equipo con Spring Boot,
+                  Angular, GitHub, Trello y Scrum.<br />
+                  - PoC MO4D (IA generativa): evaluación/entrenamiento con datos
+                  de ejemplo, métricas, plan de pruebas e informes.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <div class="timeline__top">
+                  <h3>
+                    LÍNEA DIRECTA ASEGURADORA (Tres Cantos) · Prácticas Soporte
+                    Informático (CAU)
+                  </h3>
+                  <span class="muted">Oct 2021 — Dic 2021</span>
+                </div>
+                <p>
+                  - Configuración de equipos con IVANTI y Directorio Activo.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section id="education" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>Educación</h2>
+            <p>Formación principal y cursos relevantes.</p>
+          </div>
+
+          <div class="cards cards--2">
+            <article class="card">
+              <h3>CFGS Desarrollo de Aplicaciones Multiplataforma</h3>
+              <p class="muted">
+                IES Tetuán de las Victorias (Madrid) · 2022 — 2024
+              </p>
+              <p>
+                Formación orientada a desarrollo de aplicaciones y buenas
+                prácticas.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>CFGM Sistemas Microinformáticos y Redes</h3>
+              <p class="muted">
+                IES Virgen de la Paz (Alcobendas) · 2019 — 2021
+              </p>
+              <p>Base sólida en sistemas, soporte y redes.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CERTIFICATES -->
+      <section id="certs" class="section section--alt">
+        <div class="container">
+          <div class="section__head">
+            <h2>Certificados</h2>
+            <p>Formación adicional relevante.</p>
+          </div>
+
+          <div class="list">
+            <article class="list__item">
+              <div>
+                <h3>Máster Profesional Spring Framework y Spring Boot</h3>
+                <p class="muted">AEPI (Madrid) · May — Jul 2022</p>
+              </div>
+              <a class="btn btn--small" href="#" target="_blank" rel="noopener"
+                >Añadir enlace</a
+              >
+            </article>
+
+            <article class="list__item">
+              <div>
+                <h3>Analista Java de Aplicaciones Empresariales</h3>
+                <p class="muted">AEPI (Madrid) · Feb — Abr 2022</p>
+              </div>
+              <a class="btn btn--small" href="#" target="_blank" rel="noopener"
+                >Añadir enlace</a
+              >
+            </article>
+
+            <article class="list__item">
+              <div>
+                <h3>Fundamentos de computación en la nube (AWS)</h3>
+                <p class="muted">Formación · (Indica fecha si quieres)</p>
+              </div>
+              <a class="btn btn--small" href="#" target="_blank" rel="noopener"
+                >Añadir enlace</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>Proyectos</h2>
+            <p>7 proyectos en orden de importancia.</p>
+          </div>
+
+          <div class="projects">
+            <!-- 1 -->
+            <article class="project">
+              <div class="project__thumb">
+                <div class="project__placeholder">MiDespensa</div>
+              </div>
+              <div class="project__body">
+                <h3>MiDespensa</h3>
+                <p>
+                  Aplicación web orientada a organizar productos/stock de
+                  despensa (desplegada en Netlify).
+                </p>
+                <div class="tags">
+                  <span class="tag">Web</span>
+                  <span class="tag">Netlify</span>
+                </div>
+                <div class="project__links">
+                  <a
+                    class="btn btn--small btn--primary"
+                    href="https://midespensaweb.netlify.app/"
+                    target="_blank"
+                    rel="noopener"
+                    >Ver web</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- 2 -->
+            <article class="project">
+              <div class="project__thumb">
+                <div class="project__placeholder">ControlPresencia</div>
+              </div>
+              <div class="project__body">
+                <h3>ControlPresencia</h3>
+                <p>
+                  Aplicación web para control de presencia/jornada (desplegada
+                  en Netlify).
+                </p>
+                <div class="tags">
+                  <span class="tag">Web</span>
+                  <span class="tag">Netlify</span>
+                </div>
+                <div class="project__links">
+                  <a
+                    class="btn btn--small btn--primary"
+                    href="https://controlpresenciaweb.netlify.app/"
+                    target="_blank"
+                    rel="noopener"
+                    >Ver web</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- 3 -->
+            <article class="project">
+              <div class="project__thumb">
+                <div class="project__placeholder">MyProTask</div>
+              </div>
+              <div class="project__body">
+                <h3>MyProTask</h3>
+                <p>
+                  Aplicación web de gestión de tareas/productividad (desplegada
+                  en Netlify).
+                </p>
+                <div class="tags">
+                  <span class="tag">Web</span>
+                  <span class="tag">Netlify</span>
+                </div>
+                <div class="project__links">
+                  <a
+                    class="btn btn--small btn--primary"
+                    href="https://myprotaskweb.netlify.app/"
+                    target="_blank"
+                    rel="noopener"
+                    >Ver web</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- 4 -->
+            <article class="project">
+              <div class="project__thumb">
+                <div class="project__placeholder">ProjectMaster</div>
+              </div>
+              <div class="project__body">
+                <h3>ProjectMaster</h3>
+                <p>
+                  Aplicación web enfocada a organización y seguimiento de
+                  proyectos (desplegada en Netlify).
+                </p>
+                <div class="tags">
+                  <span class="tag">Web</span>
+                  <span class="tag">Netlify</span>
+                </div>
+                <div class="project__links">
+                  <a
+                    class="btn btn--small btn--primary"
+                    href="https://projectmasterweb.netlify.app/"
+                    target="_blank"
+                    rel="noopener"
+                    >Ver web</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- 5 -->
+            <article class="project">
+              <div class="project__thumb">
+                <div class="project__placeholder">PDFFusion</div>
+              </div>
+              <div class="project__body">
+                <h3>PDFFusion</h3>
+                <p>
+                  Herramienta web relacionada con PDFs (desplegada en Netlify).
+                </p>
+                <div class="tags">
+                  <span class="tag">Web</span>
+                  <span class="tag">Netlify</span>
+                </div>
+                <div class="project__links">
+                  <a
+                    class="btn btn--small btn--primary"
+                    href="https://pdffusionweb.netlify.app/"
+                    target="_blank"
+                    rel="noopener"
+                    >Ver web</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- 6 -->
+            <article class="project">
+              <div class="project__thumb">
+                <div class="project__placeholder">VotaFMS</div>
+              </div>
+              <div class="project__body">
+                <h3>VotaFMS</h3>
+                <p>
+                  Aplicación web de votación/valoración (desplegada en Netlify).
+                </p>
+                <div class="tags">
+                  <span class="tag">Web</span>
+                  <span class="tag">Netlify</span>
+                </div>
+                <div class="project__links">
+                  <a
+                    class="btn btn--small btn--primary"
+                    href="https://votafmsweb.netlify.app/"
+                    target="_blank"
+                    rel="noopener"
+                    >Ver web</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- 7 -->
+            <article class="project">
+              <div class="project__thumb">
+                <div class="project__placeholder">M&L Inmobiliaria</div>
+              </div>
+              <div class="project__body">
+                <h3>M&L Inmobiliaria</h3>
+                <p>
+                  Web inmobiliaria realizada con Shopify (tienda/website
+                  corporativa).
+                </p>
+                <div class="tags">
+                  <span class="tag">Shopify</span>
+                  <span class="tag">Web</span>
+                </div>
+                <div class="project__links">
+                  <a
+                    class="btn btn--small btn--primary"
+                    href="https://mlinmobiliaria.es/?srsltid=AfmBOooGpbH3-GfoPD4v_df41bLBZQdNn2GZjFMasrUMCQVj0whVt_lQ"
+                    target="_blank"
+                    rel="noopener"
+                    >Ver web</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section section--alt">
+        <div class="container">
+          <div class="section__head">
+            <h2>Skills</h2>
+            <p>Duras y blandas.</p>
+          </div>
+
+          <div class="cards cards--2">
+            <article class="card">
+              <h3>Skills duras</h3>
+              <div class="tags">
+                <span class="tag">Java</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">REST</span>
+                <span class="tag">SOAP</span>
+                <span class="tag">SQL</span>
+                <span class="tag">Oracle</span>
+                <span class="tag">DB2</span>
+                <span class="tag">Angular</span>
+                <span class="tag">Vue</span>
+                <span class="tag">JS/TS</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">C#</span>
+                <span class="tag">.NET</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">GitHub</span>
+                <span class="tag">GitLab</span>
+                <span class="tag">Jenkins</span>
+                <span class="tag">Postman</span>
+                <span class="tag">SoapUI</span>
+                <span class="tag">Serena Dimensions</span>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3>Skills blandas</h3>
+              <div class="tags">
+                <span class="tag">Trabajo en equipo</span>
+                <span class="tag">Proactividad</span>
+                <span class="tag">Aprendizaje continuo</span>
+                <span class="tag">Responsabilidad</span>
+                <span class="tag">Comunicación</span>
+                <span class="tag">Resolución de incidencias</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>Contacto</h2>
+            <p>¿Hablamos? Puedes escribirme por email o LinkedIn.</p>
+          </div>
+
+          <div class="contact">
+            <div class="contact__card">
+              <h3>Hablemos</h3>
+              <p class="muted">Respuesta rápida por email o LinkedIn.</p>
+
+              <div class="contact__links">
+                <a class="contact__link" href="mailto:sanzromerom@gmail.com"
+                  >sanzromerom@gmail.com</a
+                >
+                <a class="contact__link" href="tel:+34634567340"
+                  >+34 634 567 340</a
+                >
+                <a
+                  class="contact__link"
+                  href="https://www.linkedin.com/in/manuel-sanz-romero"
+                  target="_blank"
+                  rel="noopener"
+                  >LinkedIn</a
+                >
+                <a class="contact__link" href="#" target="_blank" rel="noopener"
+                  >GitHub (añade tu link)</a
+                >
+              </div>
+            </div>
+
+            <form class="form" action="#" method="post">
+              <label>
+                Nombre
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Tu nombre"
+                  required
+                />
+              </label>
+
+              <label>
+                Email
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="tu@email.com"
+                  required
+                />
+              </label>
+
+              <label>
+                Mensaje
+                <textarea
+                  name="message"
+                  rows="5"
+                  placeholder="Cuéntame en qué puedo ayudarte"
+                  required
+                ></textarea>
+              </label>
+
+              <button class="btn btn--primary" type="submit">Enviar</button>
+              <p class="muted small">
+                *Este formulario no envía nada sin backend. Si quieres, te lo
+                conecto a EmailJS o Formspree.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>
+          © <span id="year"></span> Manuel Sanz Romero. Hecho con HTML + CSS.
+        </p>
+        <p class="muted">San Sebastián de los Reyes, Madrid</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

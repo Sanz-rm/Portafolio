@@ -39,11 +39,9 @@
       <section id="top" class="hero hero--folio">
         <div class="container hero__grid hero__grid--folio">
           <div class="hero__content hero__content--folio">
-            <p class="badge badge--folio">Junior Developer · Java · Web</p>
-
             <h1 class="hero__title">
               Hola, soy <span class="accent">Manuel</span><br />
-              <span class="accent">Sanz Romero</span>
+              <span class="accent">Sanz</span>
             </h1>
 
             <p class="hero__typing">
@@ -142,11 +140,6 @@
                 <span class="note__icon">💡</span
                 ><span class="note__text">Ideas</span>
               </div>
-            </div>
-
-            <div class="hero__photoCard hero__photoCard--folio">
-              <p class="hero__photoTitle">Disponible para proyectos</p>
-              <p class="hero__photoText">Java · APIs · Web</p>
             </div>
           </div>
         </div>
@@ -673,6 +666,48 @@
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
+
+      const roles = ["Backend", "Frontend", "Full Stack"];
+      const typingEl = document.getElementById("typing");
+
+      let roleIndex = 0;
+      let charIndex = 0;
+      let deleting = false;
+
+      // Ajusta estos valores para ir más lento/rápido
+      const SPEED_TYPE = 110; // antes 70 (escritura)
+      const SPEED_DELETE = 70; // antes 40 (borrado)
+      const PAUSE_END = 1500; // antes 1100 (pausa al completar palabra)
+      const PAUSE_SWITCH = 450; // antes 250 (pausa al cambiar de palabra)
+
+      function tick() {
+        const current = roles[roleIndex];
+
+        if (!deleting) {
+          charIndex++;
+          typingEl.textContent = current.slice(0, charIndex);
+
+          if (charIndex === current.length) {
+            deleting = true;
+            setTimeout(tick, PAUSE_END);
+            return;
+          }
+          setTimeout(tick, SPEED_TYPE);
+        } else {
+          charIndex--;
+          typingEl.textContent = current.slice(0, charIndex);
+
+          if (charIndex === 0) {
+            deleting = false;
+            roleIndex = (roleIndex + 1) % roles.length;
+            setTimeout(tick, PAUSE_SWITCH);
+            return;
+          }
+          setTimeout(tick, SPEED_DELETE);
+        }
+      }
+
+      tick();
     </script>
   </body>
 </html>

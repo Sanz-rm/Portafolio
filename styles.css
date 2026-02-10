@@ -11,21 +11,15 @@
   --max: 1100px;
   --header-bg: rgba(11, 18, 32, 0.72);
 
-  --bg-grad-1: radial-gradient(
-    1000px 600px at 20% 25%,
-    rgba(0, 153, 255, 0.16),
-    transparent 62%
-  );
-  --bg-grad-2: radial-gradient(
-    900px 650px at 85% 55%,
-    rgba(0, 153, 255, 0.1),
-    transparent 60%
-  );
-  --bg-grad-3: radial-gradient(
-    800px 520px at 55% 100%,
-    rgba(30, 166, 255, 0.08),
-    transparent 62%
-  );
+  --bg-grad-1: radial-gradient(1000px 600px at 20% 25%,
+      rgba(0, 153, 255, 0.16),
+      transparent 62%);
+  --bg-grad-2: radial-gradient(900px 650px at 85% 55%,
+      rgba(0, 153, 255, 0.1),
+      transparent 60%);
+  --bg-grad-3: radial-gradient(800px 520px at 55% 100%,
+      rgba(30, 166, 255, 0.08),
+      transparent 62%);
   --bg-grad-base: linear-gradient(180deg, #0b141a, #070e12);
 }
 
@@ -86,6 +80,7 @@ a:hover {
 .skip-link:focus {
   left: 10px;
 }
+
 /* FIN SECCION BASE */
 
 /* INICIO SECCION HEADER */
@@ -134,6 +129,7 @@ a:hover {
   background: rgba(19, 135, 193, 0.14);
   color: var(--text) !important;
 }
+
 /* FIN SECCION HEADER */
 
 /* INICIO SECCION HERO BASE */
@@ -181,6 +177,7 @@ h1 {
   flex-wrap: wrap;
   margin-bottom: 18px;
 }
+
 /* FIN SECCION HERO BASE */
 
 /* INICIO SECCION BOTONES */
@@ -188,34 +185,40 @@ h1 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 11px 14px;
-  border-radius: 14px;
+  padding: 14px 20px;
+  border-radius: 30px;
   border: 1px solid rgba(255, 255, 255, 0.12);
   background: rgba(255, 255, 255, 0.05);
   color: var(--text);
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .btn:hover {
-  background: rgba(255, 255, 255, 0.08);
   text-decoration: none;
+  transform: translateY(-2px) scale(1.02);
 }
 
 .btn--primary {
-  background: rgba(19, 135, 193, 0.22);
-  border-color: rgba(19, 135, 193, 0.45);
+  background-color: #1387c1;
+}
+
+.btn--primary :hover {
+  background-color: #0b5ed7;
 }
 
 .btn--ghost {
   background: transparent;
+  color: #1387c1;
+  border: 2px solid #1387c1;
 }
 
 .btn--text {
   background: transparent;
   border-color: transparent;
-  color: var(--muted);
+  color: var(--text);
 }
 
 .btn--text:hover {
@@ -229,6 +232,7 @@ h1 {
   border-radius: 12px;
   font-weight: 600;
 }
+
 /* FIN SECCION BOTONES */
 
 /* INICIO SECCION SECCIONES Y FOOTER */
@@ -243,7 +247,7 @@ h1 {
 
 .section,
 .section--alt {
-  padding: 52px 0;
+  padding: 32px 0;
 }
 
 .footer {
@@ -273,6 +277,7 @@ h1 {
   color: var(--muted);
   line-height: 1.65;
 }
+
 /* FIN SECCION SECCIONES Y FOOTER */
 
 /* INICIO SECCION CARDS */
@@ -306,6 +311,7 @@ h1 {
   color: var(--muted);
   line-height: 1.65;
 }
+
 /* FIN SECCION CARDS */
 
 /* INICIO SECCION TIMELINE */
@@ -354,6 +360,7 @@ h1 {
   color: var(--muted);
   line-height: 1.7;
 }
+
 /* FIN SECCION TIMELINE */
 
 /* INICIO SECCION LISTAS */
@@ -380,6 +387,7 @@ h1 {
 .list__item p {
   margin: 6px 0 0;
 }
+
 /* FIN SECCION LISTAS */
 
 /* INICIO SECCION PROYECTOS */
@@ -405,11 +413,9 @@ h1 {
 .project__placeholder {
   height: 150px;
   border-radius: 14px;
-  background: linear-gradient(
-    135deg,
-    rgba(19, 135, 193, 0.22),
-    rgba(56, 189, 248, 0.12)
-  );
+  background: linear-gradient(135deg,
+      rgba(19, 135, 193, 0.22),
+      rgba(56, 189, 248, 0.12));
   border: 1px solid rgba(255, 255, 255, 0.12);
   display: grid;
   place-items: center;
@@ -438,6 +444,7 @@ h1 {
   flex-wrap: wrap;
   margin-top: 12px;
 }
+
 /* FIN SECCION PROYECTOS */
 
 /* INICIO SECCION TAGS */
@@ -455,6 +462,7 @@ h1 {
   color: rgba(255, 255, 255, 0.86);
   font-size: 0.88rem;
 }
+
 /* FIN SECCION TAGS */
 
 /* INICIO SECCION CONTACTO */
@@ -493,6 +501,7 @@ h1 {
 .contact__link:hover {
   background: rgba(255, 255, 255, 0.08);
 }
+
 /* FIN SECCION CONTACTO */
 
 /* INICIO SECCION FORMULARIO */
@@ -536,6 +545,7 @@ textarea:focus {
 .muted {
   color: var(--muted);
 }
+
 /* FIN SECCION FORMULARIO */
 
 /* INICIO SECCION HERO FOLIO */
@@ -583,10 +593,12 @@ textarea:focus {
 }
 
 @keyframes blink {
+
   0%,
   45% {
     opacity: 1;
   }
+
   46%,
   100% {
     opacity: 0;
@@ -617,9 +629,12 @@ textarea:focus {
   width: min(440px, 92vw);
   aspect-ratio: 1 / 1;
   border-radius: 22px;
-  overflow: hidden;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  overflow: visible;
+  /* <-- CLAVE para que las notas salgan */
+  background: transparent;
+  border: none;
+
   box-shadow:
     0 30px 80px rgba(0, 0, 0, 0.55),
     0 0 0 1px rgba(255, 255, 255, 0.1),
@@ -649,6 +664,37 @@ textarea:focus {
 .hero__imageWrap:hover {
   transform: translateY(-6px) scale(1.02);
 }
+
+.hero__imageClip {
+  width: 100%;
+  height: 100%;
+  border-radius: 22px;
+  overflow: hidden;
+  /* <-- aquí se recorta SOLO la imagen */
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+}
+
+.hero__imageClip::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1),
+    0 0 18px 6px rgba(30, 166, 255, 0.1);
+}
+
+.hero__imageClip img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: contrast(1.05) saturate(1.05);
+}
+
 /* FIN SECCION HERO FOLIO */
 
 /* INICIO SECCION NOTAS */
@@ -656,53 +702,62 @@ textarea:focus {
   position: absolute;
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  padding: 14px 16px;
+  gap: 4px;
+  padding: 8px 10px;
   border-radius: 14px;
-  background: rgba(10, 18, 24, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #141f26;
+  opacity: 1;
+  border: none;
   color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.55);
-  backdrop-filter: blur(10px);
   user-select: none;
+  box-shadow:
+    0 12px 35px rgba(231, 242, 247, 0.22),
+    0 2px 10px rgba(231, 242, 247, 0.10);
 }
 
-.note__icon {
-  width: 26px;
-  height: 26px;
-  display: grid;
-  place-items: center;
-  border-radius: 10px;
-  background: rgba(30, 166, 255, 0.14);
-  border: 1px solid rgba(30, 166, 255, 0.25);
+.note i.bi {
+  font-size: 24px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
   color: #79c9ff;
   font-weight: 800;
 }
 
 .note__text {
+  font-size: 18px;
   font-weight: 700;
 }
 
+/* Un poco por fuera */
 .note--design {
-  top: 18px;
-  right: 18px;
+  top: 32px;
+  right: -16px;
 }
 
 .note--code {
-  left: 18px;
-  bottom: 22px;
+  left: -22px;
+  top: 110px;
 }
 
 .note--ideas {
-  right: 18px;
-  bottom: 22px;
+  right: -26px;
+  bottom: 84px;
 }
 
+/* FIN SECCION NOTAS */
+
 @keyframes floaty {
+
   0%,
   100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10px);
   }
@@ -719,6 +774,7 @@ textarea:focus {
 .float3 {
   animation: floaty 3.9s ease-in-out infinite;
 }
+
 /* FIN SECCION NOTAS */
 
 /* INICIO SECCION SOCIAL */
@@ -744,8 +800,7 @@ textarea:focus {
 
 .social-links a:hover {
   transform: translateY(-2px);
-  background: rgba(19, 135, 193, 0.16);
-  border-color: rgba(19, 135, 193, 0.45);
+  background-color: #1387c1;
   color: #fff;
   text-decoration: none;
 }
@@ -754,6 +809,7 @@ textarea:focus {
   font-size: 18px;
   line-height: 1;
 }
+
 /* FIN SECCION SOCIAL */
 
 /* INICIO SECCION RESPONSIVE */
@@ -791,4 +847,5 @@ textarea:focus {
     justify-items: start;
   }
 }
+
 /* FIN SECCION RESPONSIVE */

@@ -80,7 +80,6 @@ a:hover {
 .skip-link:focus {
   left: 10px;
 }
-
 /* FIN SECCION BASE */
 
 /* INICIO SECCION HEADER */
@@ -129,7 +128,6 @@ a:hover {
   background: rgba(19, 135, 193, 0.14);
   color: var(--text) !important;
 }
-
 /* FIN SECCION HEADER */
 
 /* INICIO SECCION HERO BASE */
@@ -177,7 +175,6 @@ h1 {
   flex-wrap: wrap;
   margin-bottom: 18px;
 }
-
 /* FIN SECCION HERO BASE */
 
 /* INICIO SECCION BOTONES */
@@ -232,7 +229,6 @@ h1 {
   border-radius: 12px;
   font-weight: 600;
 }
-
 /* FIN SECCION BOTONES */
 
 /* INICIO SECCION SECCIONES Y FOOTER */
@@ -277,7 +273,6 @@ h1 {
   color: var(--muted);
   line-height: 1.65;
 }
-
 /* FIN SECCION SECCIONES Y FOOTER */
 
 /* INICIO SECCION CARDS */
@@ -311,7 +306,6 @@ h1 {
   color: var(--muted);
   line-height: 1.65;
 }
-
 /* FIN SECCION CARDS */
 
 /* INICIO SECCION TIMELINE */
@@ -360,8 +354,126 @@ h1 {
   color: var(--muted);
   line-height: 1.7;
 }
-
 /* FIN SECCION TIMELINE */
+
+/* INICIO SECCION RESUME */
+.resume__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.resume__title {
+  margin: 0 0 16px;
+  font-size: 1.45rem;
+  letter-spacing: -0.2px;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.resume__title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 54px;
+  height: 3px;
+  border-radius: 999px;
+  background: rgba(19, 135, 193, 0.9);
+  box-shadow: 0 0 0 6px rgba(19, 135, 193, 0.08);
+}
+
+.resume__timeline {
+  position: relative;
+  padding-left: 18px;
+}
+
+.resume__timeline::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.resume__item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: 12px;
+  align-items: start;
+  margin-bottom: 14px;
+}
+
+.resume__dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: rgba(19, 135, 193, 0.55);
+  border: 1px solid rgba(19, 135, 193, 0.95);
+  margin-top: 10px;
+  position: relative;
+  left: 1px;
+  box-shadow: 0 0 0 6px rgba(19, 135, 193, 0.09);
+}
+
+.resume__card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+}
+
+.resume__date {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: rgba(19, 135, 193, 0.14);
+  border: 1px solid rgba(19, 135, 193, 0.35);
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  width: fit-content;
+}
+
+.resume__role {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+.resume__meta {
+  margin: 0 0 10px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.resume__text {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.resume__bullets {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+  line-height: 1.7;
+  display: grid;
+  gap: 6px;
+}
+
+.resume__bullets li::marker {
+  color: rgba(19, 135, 193, 0.95);
+}
+/* FIN SECCION RESUME */
 
 /* INICIO SECCION LISTAS */
 .list {
@@ -387,7 +499,6 @@ h1 {
 .list__item p {
   margin: 6px 0 0;
 }
-
 /* FIN SECCION LISTAS */
 
 /* INICIO SECCION PROYECTOS */
@@ -444,7 +555,6 @@ h1 {
   flex-wrap: wrap;
   margin-top: 12px;
 }
-
 /* FIN SECCION PROYECTOS */
 
 /* INICIO SECCION TAGS */
@@ -462,7 +572,6 @@ h1 {
   color: rgba(255, 255, 255, 0.86);
   font-size: 0.88rem;
 }
-
 /* FIN SECCION TAGS */
 
 /* INICIO SECCION CONTACTO */
@@ -501,7 +610,6 @@ h1 {
 .contact__link:hover {
   background: rgba(255, 255, 255, 0.08);
 }
-
 /* FIN SECCION CONTACTO */
 
 /* INICIO SECCION FORMULARIO */
@@ -545,7 +653,6 @@ textarea:focus {
 .muted {
   color: var(--muted);
 }
-
 /* FIN SECCION FORMULARIO */
 
 /* INICIO SECCION HERO FOLIO */
@@ -593,7 +700,6 @@ textarea:focus {
 }
 
 @keyframes blink {
-
   0%,
   45% {
     opacity: 1;
@@ -629,12 +735,9 @@ textarea:focus {
   width: min(440px, 92vw);
   aspect-ratio: 1 / 1;
   border-radius: 22px;
-
   overflow: visible;
-  /* <-- CLAVE para que las notas salgan */
   background: transparent;
   border: none;
-
   box-shadow:
     0 30px 80px rgba(0, 0, 0, 0.55),
     0 0 0 1px rgba(255, 255, 255, 0.1),
@@ -670,7 +773,6 @@ textarea:focus {
   height: 100%;
   border-radius: 22px;
   overflow: hidden;
-  /* <-- aquí se recorta SOLO la imagen */
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.08);
   position: relative;
@@ -694,7 +796,6 @@ textarea:focus {
   display: block;
   filter: contrast(1.05) saturate(1.05);
 }
-
 /* FIN SECCION HERO FOLIO */
 
 /* INICIO SECCION NOTAS */
@@ -733,7 +834,6 @@ textarea:focus {
   font-weight: 700;
 }
 
-/* Un poco por fuera */
 .note--design {
   top: 32px;
   right: -16px;
@@ -749,10 +849,7 @@ textarea:focus {
   bottom: 84px;
 }
 
-/* FIN SECCION NOTAS */
-
 @keyframes floaty {
-
   0%,
   100% {
     transform: translateY(0);
@@ -774,7 +871,6 @@ textarea:focus {
 .float3 {
   animation: floaty 3.9s ease-in-out infinite;
 }
-
 /* FIN SECCION NOTAS */
 
 /* INICIO SECCION SOCIAL */
@@ -809,7 +905,6 @@ textarea:focus {
   font-size: 18px;
   line-height: 1;
 }
-
 /* FIN SECCION SOCIAL */
 
 /* INICIO SECCION RESPONSIVE */
@@ -846,6 +941,9 @@ textarea:focus {
   .hero__photo--folio {
     justify-items: start;
   }
-}
 
+  .resume__grid {
+    grid-template-columns: 1fr;
+  }
+}
 /* FIN SECCION RESPONSIVE */

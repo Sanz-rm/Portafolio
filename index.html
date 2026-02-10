@@ -18,6 +18,7 @@
   <body>
     <a class="skip-link" href="#main">Saltar al contenido</a>
 
+    <!-- INICIO HEADER -->
     <header class="header">
       <div class="container header__inner">
         <nav class="nav" aria-label="Navegación principal">
@@ -31,9 +32,10 @@
         </nav>
       </div>
     </header>
+    <!-- FIN HEADER -->
 
     <main id="main">
-      <!-- HERO -->
+      <!-- INICIO HERO -->
       <section id="top" class="hero hero--folio">
         <div class="container hero__grid hero__grid--folio">
           <div class="hero__content hero__content--folio">
@@ -49,11 +51,9 @@
             </p>
 
             <p class="lead lead--folio">
-              Soy una persona ambiciosa y con ganas de aprender continuamente.
-              Me gusta mantenerme ocupado, asumir nuevas responsabilidades y
-              aprender de forma proactiva. Disfruto del trabajo en equipo y de
-              crear un buen vínculo con mis compañeros para aportar un ambiente
-              colaborativo y productivo.
+              Desarrollador Java (Spring Boot) con experiencia en servicios
+              REST/SOAP y soporte a producción. Me enfoco en código mantenible,
+              documentación clara y buen trabajo en equipo.
             </p>
 
             <div class="hero__actions hero__actions--folio">
@@ -89,7 +89,6 @@
                 />
               </div>
 
-              <!-- Notas flotantes -->
               <div class="note note--design float1">
                 <i class="bi bi-palette"></i>
                 <span class="note__text">Design</span>
@@ -106,8 +105,9 @@
           </div>
         </div>
       </section>
+      <!-- FIN HERO -->
 
-      <!-- ABOUT -->
+      <!-- INICIO ABOUT -->
       <section id="about" class="section">
         <div class="container">
           <div class="section__head">
@@ -146,111 +146,135 @@
           </div>
         </div>
       </section>
+      <!-- FIN ABOUT -->
 
-      <!-- EXPERIENCE -->
+      <!-- INICIO RESUME (EXPERIENCIA IZQ / EDUCACIÓN DER) -->
       <section id="experience" class="section section--alt">
         <div class="container">
           <div class="section__head">
-            <h2>Experiencia</h2>
-            <p>Lo más reciente primero.</p>
+            <h2>Resumen</h2>
+            <p>Experiencia laboral a la izquierda y educación a la derecha.</p>
           </div>
 
-          <div class="timeline">
-            <article class="timeline__item">
-              <div class="timeline__dot"></div>
-              <div class="timeline__content">
-                <div class="timeline__top">
-                  <h3>
-                    VILT (Madrid) · Desarrollador Backend Java (Consultor
-                    Técnico)
-                  </h3>
-                  <span class="muted">Oct 2024 — Actualidad</span>
-                </div>
-                <p>
-                  - Desarrollo y mantenimiento de servicios Java (REST/SOAP)
-                  mejorando escalabilidad y mantenibilidad.<br />
-                  - Soporte a producción: análisis de logs/trazas, incidencias y
-                  seguimiento de batches/reprocesos.<br />
-                  - Pruebas y validación de APIs con Postman y SoapUI.<br />
-                  - Consultas y soporte de datos en Oracle (SQL) y DB2
-                  (SPUFI).<br />
-                  - Despliegues con GitLab + pipelines en Jenkins; baselines en
-                  Serena Dimensions.<br />
-                  - Migración de proyectos de Serena Dimensions a GitLab
-                  (análisis, informes y comparativas .jar/.war).
-                </p>
-              </div>
-            </article>
+          <div class="resume__grid">
+            <div class="resume__col">
+              <h3 class="resume__title">Experiencia</h3>
+              <div class="resume__timeline">
+                <article class="resume__item">
+                  <span class="resume__dot" aria-hidden="true"></span>
+                  <div class="resume__card">
+                    <span class="resume__date">Oct 2024 — Actualidad</span>
+                    <h4 class="resume__role">
+                      VILT (Madrid) · Desarrollador Backend Java (Consultor
+                      Técnico)
+                    </h4>
+                    <p class="resume__meta">
+                      Java · Spring Boot · REST/SOAP · Oracle/DB2 · GitLab/Jenkins
+                    </p>
+                    <ul class="resume__bullets">
+                      <li>
+                        Desarrollo y mantenimiento de servicios Java (REST/SOAP)
+                        mejorando escalabilidad y mantenibilidad.
+                      </li>
+                      <li>
+                        Soporte a producción: análisis de logs/trazas, incidencias
+                        y seguimiento de batches/reprocesos.
+                      </li>
+                      <li>Pruebas y validación de APIs con Postman y SoapUI.</li>
+                      <li>
+                        Consultas y soporte de datos en Oracle (SQL) y DB2 (SPUFI).
+                      </li>
+                      <li>
+                        Despliegues con GitLab + pipelines en Jenkins; baselines en
+                        Serena Dimensions.
+                      </li>
+                      <li>
+                        Migración de proyectos de Serena Dimensions a GitLab
+                        (análisis, informes y comparativas .jar/.war).
+                      </li>
+                    </ul>
+                  </div>
+                </article>
 
-            <article class="timeline__item">
-              <div class="timeline__dot"></div>
-              <div class="timeline__content">
-                <div class="timeline__top">
-                  <h3>
-                    EVIDEN - ATOS (Madrid) · Prácticas Desarrollador Full Stack
-                  </h3>
-                  <span class="muted">Abr 2024 — Jun 2024</span>
-                </div>
-                <p>
-                  - Bootcamp intensivo + proyecto en equipo con Spring Boot,
-                  Angular, GitHub, Trello y Scrum.<br />
-                  - PoC MO4D (IA generativa): evaluación/entrenamiento con datos
-                  de ejemplo, métricas, plan de pruebas e informes.
-                </p>
-              </div>
-            </article>
+                <article class="resume__item">
+                  <span class="resume__dot" aria-hidden="true"></span>
+                  <div class="resume__card">
+                    <span class="resume__date">Abr 2024 — Jun 2024</span>
+                    <h4 class="resume__role">
+                      EVIDEN - ATOS (Madrid) · Prácticas Desarrollador Full Stack
+                    </h4>
+                    <p class="resume__meta">
+                      Spring Boot · Angular · GitHub · Trello · Scrum
+                    </p>
+                    <ul class="resume__bullets">
+                      <li>
+                        Bootcamp intensivo + proyecto en equipo con Spring Boot,
+                        Angular, GitHub, Trello y Scrum.
+                      </li>
+                      <li>
+                        PoC MO4D (IA generativa): evaluación/entrenamiento con
+                        datos de ejemplo, métricas, plan de pruebas e informes.
+                      </li>
+                    </ul>
+                  </div>
+                </article>
 
-            <article class="timeline__item">
-              <div class="timeline__dot"></div>
-              <div class="timeline__content">
-                <div class="timeline__top">
-                  <h3>
-                    LÍNEA DIRECTA ASEGURADORA (Tres Cantos) · Prácticas Soporte
-                    Informático (CAU)
-                  </h3>
-                  <span class="muted">Oct 2021 — Dic 2021</span>
-                </div>
-                <p>
-                  - Configuración de equipos con IVANTI y Directorio Activo.
-                </p>
+                <article class="resume__item">
+                  <span class="resume__dot" aria-hidden="true"></span>
+                  <div class="resume__card">
+                    <span class="resume__date">Oct 2021 — Dic 2021</span>
+                    <h4 class="resume__role">
+                      LÍNEA DIRECTA ASEGURADORA (Tres Cantos) · Prácticas Soporte
+                      Informático (CAU)
+                    </h4>
+                    <p class="resume__meta">IVANTI · Directorio Activo</p>
+                    <ul class="resume__bullets">
+                      <li>Configuración de equipos con IVANTI y Directorio Activo.</li>
+                    </ul>
+                  </div>
+                </article>
               </div>
-            </article>
+            </div>
+
+            <div id="education" class="resume__col">
+              <h3 class="resume__title">Educación</h3>
+              <div class="resume__timeline">
+                <article class="resume__item">
+                  <span class="resume__dot" aria-hidden="true"></span>
+                  <div class="resume__card">
+                    <span class="resume__date">2022 — 2024</span>
+                    <h4 class="resume__role">
+                      CFGS Desarrollo de Aplicaciones Multiplataforma
+                    </h4>
+                    <p class="resume__meta">
+                      IES Tetuán de las Victorias (Madrid)
+                    </p>
+                    <p class="resume__text">
+                      Formación orientada a desarrollo de aplicaciones y buenas
+                      prácticas.
+                    </p>
+                  </div>
+                </article>
+
+                <article class="resume__item">
+                  <span class="resume__dot" aria-hidden="true"></span>
+                  <div class="resume__card">
+                    <span class="resume__date">2019 — 2021</span>
+                    <h4 class="resume__role">
+                      CFGM Sistemas Microinformáticos y Redes
+                    </h4>
+                    <p class="resume__meta">IES Virgen de la Paz (Alcobendas)</p>
+                    <p class="resume__text">Base sólida en sistemas, soporte y redes.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+      <!-- FIN RESUME -->
 
-      <!-- EDUCATION -->
-      <section id="education" class="section">
-        <div class="container">
-          <div class="section__head">
-            <h2>Educación</h2>
-            <p>Formación principal y cursos relevantes.</p>
-          </div>
-
-          <div class="cards cards--2">
-            <article class="card">
-              <h3>CFGS Desarrollo de Aplicaciones Multiplataforma</h3>
-              <p class="muted">
-                IES Tetuán de las Victorias (Madrid) · 2022 — 2024
-              </p>
-              <p>
-                Formación orientada a desarrollo de aplicaciones y buenas
-                prácticas.
-              </p>
-            </article>
-
-            <article class="card">
-              <h3>CFGM Sistemas Microinformáticos y Redes</h3>
-              <p class="muted">
-                IES Virgen de la Paz (Alcobendas) · 2019 — 2021
-              </p>
-              <p>Base sólida en sistemas, soporte y redes.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- CERTIFICATES -->
+      <!-- INICIO CERTIFICATES -->
       <section id="certs" class="section section--alt">
         <div class="container">
           <div class="section__head">
@@ -291,8 +315,9 @@
           </div>
         </div>
       </section>
+      <!-- FIN CERTIFICATES -->
 
-      <!-- PROJECTS -->
+      <!-- INICIO PROJECTS -->
       <section id="projects" class="section">
         <div class="container">
           <div class="section__head">
@@ -301,7 +326,6 @@
           </div>
 
           <div class="projects">
-            <!-- 1 -->
             <article class="project">
               <div class="project__thumb">
                 <div class="project__placeholder">MiDespensa</div>
@@ -328,7 +352,6 @@
               </div>
             </article>
 
-            <!-- 2 -->
             <article class="project">
               <div class="project__thumb">
                 <div class="project__placeholder">ControlPresencia</div>
@@ -355,7 +378,6 @@
               </div>
             </article>
 
-            <!-- 3 -->
             <article class="project">
               <div class="project__thumb">
                 <div class="project__placeholder">MyProTask</div>
@@ -382,7 +404,6 @@
               </div>
             </article>
 
-            <!-- 4 -->
             <article class="project">
               <div class="project__thumb">
                 <div class="project__placeholder">ProjectMaster</div>
@@ -409,7 +430,6 @@
               </div>
             </article>
 
-            <!-- 5 -->
             <article class="project">
               <div class="project__thumb">
                 <div class="project__placeholder">PDFFusion</div>
@@ -435,7 +455,6 @@
               </div>
             </article>
 
-            <!-- 6 -->
             <article class="project">
               <div class="project__thumb">
                 <div class="project__placeholder">VotaFMS</div>
@@ -461,7 +480,6 @@
               </div>
             </article>
 
-            <!-- 7 -->
             <article class="project">
               <div class="project__thumb">
                 <div class="project__placeholder">M&L Inmobiliaria</div>
@@ -490,8 +508,9 @@
           </div>
         </div>
       </section>
+      <!-- FIN PROJECTS -->
 
-      <!-- SKILLS -->
+      <!-- INICIO SKILLS -->
       <section id="skills" class="section section--alt">
         <div class="container">
           <div class="section__head">
@@ -541,8 +560,9 @@
           </div>
         </div>
       </section>
+      <!-- FIN SKILLS -->
 
-      <!-- CONTACT -->
+      <!-- INICIO CONTACT -->
       <section id="contact" class="section">
         <div class="container">
           <div class="section__head">
@@ -615,8 +635,10 @@
           </div>
         </div>
       </section>
+      <!-- FIN CONTACT -->
     </main>
 
+    <!-- INICIO FOOTER -->
     <footer class="footer">
       <div class="container footer__inner">
         <p>
@@ -625,7 +647,9 @@
         <p class="muted">San Sebastián de los Reyes, Madrid</p>
       </div>
     </footer>
+    <!-- FIN FOOTER -->
 
+    <!-- INICIO SCRIPT -->
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
 
@@ -670,5 +694,6 @@
 
       tick();
     </script>
+    <!-- FIN SCRIPT -->
   </body>
 </html>

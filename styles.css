@@ -273,6 +273,7 @@ h1 {
   color: var(--muted);
   line-height: 1.65;
 }
+
 /* FIN SECCION SECCIONES Y FOOTER */
 
 /* INICIO SECCION CARDS */
@@ -381,7 +382,6 @@ h1 {
   height: 3px;
   border-radius: 999px;
   background: rgba(19, 135, 193, 0.9);
-  box-shadow: 0 0 0 6px rgba(19, 135, 193, 0.08);
 }
 
 /* Timeline con border-left y punto ENCIMA de la línea */

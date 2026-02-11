@@ -27,7 +27,7 @@
           <a href="#education">Educación</a>
           <a href="#certs">Certificados</a>
           <a href="#projects">Proyectos</a>
-          <a href="#skills">Skills</a>
+          <a href="#skills">Stack</a>
           <a class="nav__cta" href="#contact">Contacto</a>
         </nav>
       </div>
@@ -51,9 +51,8 @@
             </p>
 
             <p class="lead lead--folio">
-              Desarrollador Java (Spring Boot) con experiencia en servicios
-              REST/SOAP y soporte a producción. Me enfoco en código mantenible,
-              documentación clara y buen trabajo en equipo.
+              Backend Java · Spring Boot · APIs REST/SOAP · soporte a producción
+              · trazabilidad y calidad
             </p>
 
             <div class="hero__actions hero__actions--folio">
@@ -68,14 +67,30 @@
               >
             </div>
 
-            <div class="social-links" data-aos="fade-up" data-aos-delay="600">
-              <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" aria-label="LinkedIn"
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/manuel-sanz-romero-6a8797320/"
+                target="_blank"
+                rel="noopener"
+                aria-label="LinkedIn"
                 ><i class="bi bi-linkedin"></i
               ></a>
-              <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
-              <a href="#" aria-label="Dribbble"
-                ><i class="bi bi-dribbble"></i
+              <a
+                href="https://github.com/Sanz-rm"
+                target="_blank"
+                rel="noopener"
+                aria-label="GitHub"
+                ><i class="bi bi-github"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/@SanzDev17"
+                target="_blank"
+                rel="noopener"
+                aria-label="YouTube"
+                ><i class="bi bi-youtube"></i
+              ></a>
+              <a href="mailto:sanzromerom@gmail.com" aria-label="Email"
+                ><i class="bi bi-envelope"></i
               ></a>
             </div>
           </div>
@@ -108,47 +123,72 @@
       <!-- FIN HERO -->
 
       <!-- INICIO ABOUT -->
-      <section id="about" class="section">
+      <section id="about" class="section section--about">
         <div class="container">
-          <div class="section__head">
-            <h2>Sobre mí</h2>
-            <p>
-              Soy una persona ambiciosa y con ganas de aprender continuamente.
-              Me gusta asumir nuevas responsabilidades, aprender de forma
-              proactiva y aportar buen ambiente al equipo.
-            </p>
+          <div class="about__head">
+            <h2 class="about__title">Sobre mí</h2>
           </div>
 
-          <div class="cards cards--3">
-            <article class="card">
-              <h3>Lo que hago</h3>
-              <p>
-                Desarrollo y mantenimiento de servicios (REST/SOAP), soporte a
-                producción, pruebas de APIs y trabajo con BBDD.
+          <div class="about__grid">
+            <div class="about__text">
+              <p class="about__lead">
+                Desarrollador <strong>Full Stack</strong> con foco en
+                <strong>backend</strong>, trabajando con
+                <strong>Java, Spring Boot</strong> y <strong>.NET</strong> para
+                construir APIs robustas y mantenibles.
               </p>
-            </article>
 
-            <article class="card">
-              <h3>Cómo trabajo</h3>
-              <p>
-                Me enfoco en robustez, mantenibilidad, documentación clara y
-                comunicación con el equipo.
+              <p class="about__p">
+                Experiencia en entornos productivos con
+                <strong>REST/SOAP</strong>, soporte a incidencias, trazabilidad
+                y documentación técnica, además de proyectos personales con
+                frontend moderno (Angular/Vue).
               </p>
-            </article>
 
-            <article class="card">
-              <h3>En qué me apoyo</h3>
-              <p>
-                Git/GitLab, pipelines, testing con Postman/SoapUI y mejora
-                continua con métricas e informes.
+              <p class="about__p">
+                Me gusta mantenerme ocupado, aprender de forma proactiva y
+                asumir responsabilidades. Disfruto del trabajo en equipo y de
+                crear un ambiente colaborativo y productivo.
               </p>
-            </article>
+            </div>
+
+            <div class="about__kpis">
+              <article class="kpi">
+                <div class="kpi__icon" aria-hidden="true">
+                  <i class="bi bi-code-slash"></i>
+                </div>
+                <div class="kpi__content">
+                  <div class="kpi__value">1+</div>
+                  <div class="kpi__label">Años de experiencia</div>
+                </div>
+              </article>
+
+              <article class="kpi">
+                <div class="kpi__icon" aria-hidden="true">
+                  <i class="bi bi-diagram-3"></i>
+                </div>
+                <div class="kpi__content">
+                  <div class="kpi__value">7+</div>
+                  <div class="kpi__label">Proyectos publicados</div>
+                </div>
+              </article>
+
+              <article class="kpi">
+                <div class="kpi__icon" aria-hidden="true">
+                  <i class="bi bi-layers"></i>
+                </div>
+                <div class="kpi__content">
+                  <div class="kpi__value">10+</div>
+                  <div class="kpi__label">Tecnologías principales</div>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
       </section>
       <!-- FIN ABOUT -->
 
-      <!-- INICIO RESUME (EXPERIENCIA IZQ / EDUCACIÓN DER) -->
+      <!-- INICIO RESUME -->
       <section id="experience" class="section section--alt">
         <div class="container">
           <div class="section__head section__head--tight">
@@ -156,7 +196,6 @@
           </div>
 
           <div class="resume__grid">
-            <!-- EXPERIENCIA (IZQUIERDA) -->
             <div class="resume__col">
               <h3 class="resume__title">Experiencia</h3>
 
@@ -165,43 +204,40 @@
                   <span class="resume__dot" aria-hidden="true"></span>
 
                   <div class="resume__card">
-                    <h4 class="resume__role">
-                      Desarrollador Backend Java
-                    </h4>
+                    <h4 class="resume__role">Desarrollador Backend Java</h4>
                     <span class="resume__date">Oct 2024 - Actualidad</span>
-                    <p class="resume__company">VILT · Línea Directa Aseguradora · Madrid</p>
+                    <p class="resume__company">
+                      VILT · Línea Directa Aseguradora · Madrid
+                    </p>
                     <p class="resume__meta">
-                      Java · Spring Boot · REST/SOAP · MySQL/DB2 · GitLab ·
-                      Jenkins Pipelines · Serena Dimensions · Postman · Swagger
+                      Java · Spring Boot · REST/SOAP · Oracle/DB2 · GitLab ·
+                      Jenkins Pipelines · Serena Dimensions · Postman · SoapUI ·
+                      Swagger
                     </p>
 
                     <ul class="resume__bullets">
                       <li>
-                        Desarrollo y mantenimiento de APIs REST (Spring
-                        Boot/Java), con control de excepciones y trazabilidad.
+                        Desarrollo y mantenimiento de APIs REST con Spring Boot
+                        (Java), control de excepciones y trazabilidad.
                       </li>
                       <li>
-                        Gestión de datos internos con SQL en Oracle para
-                        seguimiento de procesos, reintentos y ejecuciones
-                        controladas de tareas.
+                        Pruebas de servicios REST/SOAP con Postman y SoapUI.
+                      </li>
+                      <li>
+                        Documentación con Swagger y diagramas de flujo para
+                        mantenimiento.
+                      </li>
+                      <li>
+                        SQL en Oracle para gestión y seguimiento de datos
+                        internos y reejecución controlada de procesos.
                       </li>
                       <li>
                         Integración con programas COBOL para obtener datos de
-                        negocio de tablas DB2 y así poder consumirlos desde
-                        donde se requiera.
+                        negocio (DB2) y consumirlos desde servicios.
                       </li>
                       <li>
-                        Pruebas y verificación de endpoints con Postman y SoapUI
-                        (REST/SOAP).
-                      </li>
-                      <li>
-                        Documentación técnica con Swagger y elaboración de
-                        diagramas de flujo para mantenimiento.
-                      </li>
-                      <li>
-                        Despliegues y automatización con GitLab + Jenkins
-                        pipelines; gestión de versiones/baselines en Serena
-                        Dimensions.
+                        Automatización y despliegues con GitLab + Jenkins
+                        pipelines; baselines/versionado en Serena Dimensions.
                       </li>
                     </ul>
                   </div>
@@ -217,18 +253,19 @@
                     <span class="resume__date">Abr 2024 - Jun 2024</span>
                     <p class="resume__company">EVIDEN - ATOS · Madrid</p>
                     <p class="resume__meta">
-                      Spring Boot · Angular · GitHub · Scrum · IA generativa
+                      Spring Boot · Angular · GitHub · Scrum · JWT · IA
+                      generativa
                     </p>
 
                     <ul class="resume__bullets">
                       <li>
                         Proyecto en equipo con Spring Boot + Angular
-                        (GitHub/Scrum); foco en BBDD, estructura y backend (API
-                        REST).
+                        (GitHub/Scrum): BBDD, estructura y backend (API REST con
+                        autenticación JWT).
                       </li>
                       <li>
-                        PoC de IA generativa: pruebas con prompts, evaluación de
-                        resultados y métricas básicas para validación.
+                        PoC de IA generativa: pruebas con prompts, evaluación y
+                        métricas básicas de calidad.
                       </li>
                     </ul>
                   </div>
@@ -258,7 +295,6 @@
               </div>
             </div>
 
-            <!-- EDUCACIÓN (DERECHA) -->
             <div id="education" class="resume__col">
               <h3 class="resume__title">Educación</h3>
 
@@ -278,22 +314,17 @@
 
                     <ul class="resume__bullets">
                       <li>
-                        Java y Spring Boot: APIs REST, buenas prácticas y
-                        arquitectura de proyectos.
+                        Java + Spring Boot: APIs REST, arquitectura y buenas
+                        prácticas.
                       </li>
                       <li>
                         Bases de datos relacionales (MySQL) y no relacionales
-                        (MongoDB), con modelado (diagramas ER y diseño lógico).
+                        (MongoDB), modelado ER y diseño lógico.
                       </li>
-                      <li>
-                        .NET/C#: aplicaciones de escritorio y lógica de negocio.
-                      </li>
+                      <li>.NET/C#: apps de escritorio y lógica de negocio.</li>
                       <li>Android Studio: apps móviles.</li>
-                      <li>
-                        Concurrencia en Java: hilos, sincronización básica y
-                        tareas en segundo plano.
-                      </li>
-                      <li>Fundamentos de computación en la nube (AWS).</li>
+                      <li>Concurrencia en Java: hilos y sincronización.</li>
+                      <li>Fundamentos cloud (AWS).</li>
                     </ul>
                   </div>
                 </article>
@@ -312,21 +343,12 @@
 
                     <ul class="resume__bullets">
                       <li>
-                        Redes: direccionamiento IP, subredes y configuración
-                        básica de equipos.
+                        Redes: direccionamiento IP, subredes y configuración de
+                        equipos.
                       </li>
-                      <li>
-                        Servicios: DNS y DHCP, resolución de nombres y
-                        asignación de direcciones.
-                      </li>
-                      <li>
-                        Protocolos y conectividad: TCP/IP, HTTP/HTTPS, NAT y
-                        resolución de incidencias de red.
-                      </li>
-                      <li>
-                        Hardware y sistemas: montaje, mantenimiento y
-                        diagnóstico de incidencias.
-                      </li>
+                      <li>Servicios: DNS/DHCP y resolución de nombres.</li>
+                      <li>Conectividad: TCP/IP, NAT, routing básico.</li>
+                      <li>Hardware y sistemas: montaje y diagnóstico.</li>
                     </ul>
                   </div>
                 </article>
@@ -342,37 +364,35 @@
         <div class="container">
           <div class="section__head">
             <h2>Certificados</h2>
-            <p>Formación adicional relevante.</p>
+            <p>AEPI (Madrid).</p>
           </div>
 
           <div class="list">
             <article class="list__item">
               <div>
-                <h3>Máster Profesional Spring Framework y Spring Boot</h3>
-                <p class="muted">AEPI (Madrid) · May — Jul 2022</p>
-              </div>
-              <a class="btn btn--small" href="#" target="_blank" rel="noopener"
-                >Añadir enlace</a
-              >
-            </article>
-
-            <article class="list__item">
-              <div>
                 <h3>Analista Java de Aplicaciones Empresariales</h3>
-                <p class="muted">AEPI (Madrid) · Feb — Abr 2022</p>
+                <p class="muted">Ene - Mar 2022</p>
               </div>
-              <a class="btn btn--small" href="#" target="_blank" rel="noopener"
-                >Añadir enlace</a
+              <a
+                class="btn btn--small"
+                href="assets/Diploma%20-%20Analista%20Java%20-%20Manuel%20Sanz%20Romero.pdf"
+                target="_blank"
+                rel="noopener"
+                >Ver diploma</a
               >
             </article>
 
             <article class="list__item">
               <div>
-                <h3>Fundamentos de computación en la nube (AWS)</h3>
-                <p class="muted">Formación · (Indica fecha si quieres)</p>
+                <h3>Spring Framework y Spring Boot</h3>
+                <p class="muted">Abr - Jun 2022</p>
               </div>
-              <a class="btn btn--small" href="#" target="_blank" rel="noopener"
-                >Añadir enlace</a
+              <a
+                class="btn btn--small"
+                href="assets/Diploma%20-%20Spring%20Boot%20-%20Manuel%20Sanz%20Romero.pdf"
+                target="_blank"
+                rel="noopener"
+                >Ver diploma</a
               >
             </article>
           </div>
@@ -385,7 +405,6 @@
         <div class="container">
           <div class="section__head">
             <h2>Proyectos</h2>
-            <p>7 proyectos en orden de importancia.</p>
           </div>
 
           <div class="projects">
@@ -395,13 +414,12 @@
               </div>
               <div class="project__body">
                 <h3>MiDespensa</h3>
-                <p>
-                  Aplicación web orientada a organizar productos/stock de
-                  despensa (desplegada en Netlify).
-                </p>
+                <p>App para organizar productos/stock de despensa.</p>
                 <div class="tags">
-                  <span class="tag">Web</span>
-                  <span class="tag">Netlify</span>
+                  <span class="tag">Ionic</span>
+                  <span class="tag">Vue</span>
+                  <span class="tag">TypeScript</span>
+                  <span class="tag">Firebase</span>
                 </div>
                 <div class="project__links">
                   <a
@@ -409,7 +427,14 @@
                     href="https://midespensaweb.netlify.app/"
                     target="_blank"
                     rel="noopener"
-                    >Ver web</a
+                    >Más info</a
+                  >
+                  <a
+                    class="btn btn--small"
+                    href="https://github.com/Sanz-rm/MiDespensa"
+                    target="_blank"
+                    rel="noopener"
+                    >GitHub</a
                   >
                 </div>
               </div>
@@ -421,13 +446,11 @@
               </div>
               <div class="project__body">
                 <h3>ControlPresencia</h3>
-                <p>
-                  Aplicación web para control de presencia/jornada (desplegada
-                  en Netlify).
-                </p>
+                <p>Control de presencia/jornada.</p>
                 <div class="tags">
-                  <span class="tag">Web</span>
-                  <span class="tag">Netlify</span>
+                  <span class="tag">.NET</span>
+                  <span class="tag">C#</span>
+                  <span class="tag">MySQL</span>
                 </div>
                 <div class="project__links">
                   <a
@@ -435,7 +458,14 @@
                     href="https://controlpresenciaweb.netlify.app/"
                     target="_blank"
                     rel="noopener"
-                    >Ver web</a
+                    >Más info</a
+                  >
+                  <a
+                    class="btn btn--small"
+                    href="https://github.com/Sanz-rm/ControlPresencia"
+                    target="_blank"
+                    rel="noopener"
+                    >GitHub</a
                   >
                 </div>
               </div>
@@ -447,13 +477,12 @@
               </div>
               <div class="project__body">
                 <h3>MyProTask</h3>
-                <p>
-                  Aplicación web de gestión de tareas/productividad (desplegada
-                  en Netlify).
-                </p>
+                <p>Gestión de tareas/productividad.</p>
                 <div class="tags">
-                  <span class="tag">Web</span>
-                  <span class="tag">Netlify</span>
+                  <span class="tag">Spring Boot</span>
+                  <span class="tag">Angular</span>
+                  <span class="tag">JWT</span>
+                  <span class="tag">MySQL</span>
                 </div>
                 <div class="project__links">
                   <a
@@ -461,7 +490,14 @@
                     href="https://myprotaskweb.netlify.app/"
                     target="_blank"
                     rel="noopener"
-                    >Ver web</a
+                    >Más info</a
+                  >
+                  <a
+                    class="btn btn--small"
+                    href="https://github.com/Sanz-rm/MyProTask"
+                    target="_blank"
+                    rel="noopener"
+                    >GitHub</a
                   >
                 </div>
               </div>
@@ -473,13 +509,12 @@
               </div>
               <div class="project__body">
                 <h3>ProjectMaster</h3>
-                <p>
-                  Aplicación web enfocada a organización y seguimiento de
-                  proyectos (desplegada en Netlify).
-                </p>
+                <p>Gestión y seguimiento de proyectos.</p>
                 <div class="tags">
-                  <span class="tag">Web</span>
-                  <span class="tag">Netlify</span>
+                  <span class="tag">.NET</span>
+                  <span class="tag">C#</span>
+                  <span class="tag">MySQL</span>
+                  <span class="tag">Hilos</span>
                 </div>
                 <div class="project__links">
                   <a
@@ -487,7 +522,14 @@
                     href="https://projectmasterweb.netlify.app/"
                     target="_blank"
                     rel="noopener"
-                    >Ver web</a
+                    >Más info</a
+                  >
+                  <a
+                    class="btn btn--small"
+                    href="https://github.com/Sanz-rm/ProjectMaster"
+                    target="_blank"
+                    rel="noopener"
+                    >GitHub</a
                   >
                 </div>
               </div>
@@ -499,12 +541,11 @@
               </div>
               <div class="project__body">
                 <h3>PDFFusion</h3>
-                <p>
-                  Herramienta web relacionada con PDFs (desplegada en Netlify).
-                </p>
+                <p>Organiza y fusiona PDFs e imágenes en un único PDF.</p>
                 <div class="tags">
-                  <span class="tag">Web</span>
-                  <span class="tag">Netlify</span>
+                  <span class="tag">.NET</span>
+                  <span class="tag">C#</span>
+                  <span class="tag">PDF</span>
                 </div>
                 <div class="project__links">
                   <a
@@ -512,7 +553,7 @@
                     href="https://pdffusionweb.netlify.app/"
                     target="_blank"
                     rel="noopener"
-                    >Ver web</a
+                    >Más info</a
                   >
                 </div>
               </div>
@@ -524,12 +565,12 @@
               </div>
               <div class="project__body">
                 <h3>VotaFMS</h3>
-                <p>
-                  Aplicación web de votación/valoración (desplegada en Netlify).
-                </p>
+                <p>Votación tipo FMS + estadísticas y ranking.</p>
                 <div class="tags">
-                  <span class="tag">Web</span>
-                  <span class="tag">Netlify</span>
+                  <span class="tag">Spring Boot</span>
+                  <span class="tag">Angular</span>
+                  <span class="tag">JWT</span>
+                  <span class="tag">MySQL</span>
                 </div>
                 <div class="project__links">
                   <a
@@ -537,7 +578,14 @@
                     href="https://votafmsweb.netlify.app/"
                     target="_blank"
                     rel="noopener"
-                    >Ver web</a
+                    >Más info</a
+                  >
+                  <a
+                    class="btn btn--small"
+                    href="https://github.com/Sanz-rm/VotaFMS"
+                    target="_blank"
+                    rel="noopener"
+                    >GitHub</a
                   >
                 </div>
               </div>
@@ -549,13 +597,10 @@
               </div>
               <div class="project__body">
                 <h3>M&L Inmobiliaria</h3>
-                <p>
-                  Web inmobiliaria realizada con Shopify (tienda/website
-                  corporativa).
-                </p>
+                <p>Web inmobiliaria en Shopify (website corporativo).</p>
                 <div class="tags">
                   <span class="tag">Shopify</span>
-                  <span class="tag">Web</span>
+                  <span class="tag">Liquid</span>
                 </div>
                 <div class="project__links">
                   <a
@@ -563,7 +608,7 @@
                     href="https://mlinmobiliaria.es/?srsltid=AfmBOooGpbH3-GfoPD4v_df41bLBZQdNn2GZjFMasrUMCQVj0whVt_lQ"
                     target="_blank"
                     rel="noopener"
-                    >Ver web</a
+                    >Más info</a
                   >
                 </div>
               </div>
@@ -577,48 +622,82 @@
       <section id="skills" class="section section--alt">
         <div class="container">
           <div class="section__head">
-            <h2>Skills</h2>
-            <p>Duras y blandas.</p>
+            <h2>Stack técnico</h2>
+            <p>Enfoque backend, con base full stack.</p>
           </div>
 
-          <div class="cards cards--2">
-            <article class="card">
-              <h3>Skills duras</h3>
-              <div class="tags">
+          <div class="stack__grid">
+            <article class="stack">
+              <div class="stack__head">
+                <i class="bi bi-hdd-network" aria-hidden="true"></i>
+                <h3>Backend</h3>
+              </div>
+              <div class="stack__pills">
                 <span class="tag">Java</span>
                 <span class="tag">Spring Boot</span>
                 <span class="tag">REST</span>
                 <span class="tag">SOAP</span>
-                <span class="tag">SQL</span>
-                <span class="tag">Oracle</span>
-                <span class="tag">DB2</span>
-                <span class="tag">Angular</span>
-                <span class="tag">Vue</span>
-                <span class="tag">JS/TS</span>
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
+                <span class="tag">Microservicios</span>
+                <span class="tag">JWT</span>
                 <span class="tag">C#</span>
                 <span class="tag">.NET</span>
-                <span class="tag">MySQL</span>
-                <span class="tag">GitHub</span>
-                <span class="tag">GitLab</span>
-                <span class="tag">Jenkins</span>
-                <span class="tag">Postman</span>
-                <span class="tag">SoapUI</span>
-                <span class="tag">Serena Dimensions</span>
+                <span class="tag">Node.js</span>
               </div>
             </article>
 
-            <article class="card">
-              <h3>Skills blandas</h3>
-              <div class="tags">
-                <span class="tag">Trabajo en equipo</span>
-                <span class="tag">Proactividad</span>
-                <span class="tag">Aprendizaje continuo</span>
-                <span class="tag">Responsabilidad</span>
-                <span class="tag">Comunicación</span>
-                <span class="tag">Resolución de incidencias</span>
+            <article class="stack">
+              <div class="stack__head">
+                <i class="bi bi-window" aria-hidden="true"></i>
+                <h3>Frontend</h3>
               </div>
+              <div class="stack__pills">
+                <span class="tag">Angular</span>
+                <span class="tag">Vue</span>
+                <span class="tag">Ionic</span>
+                <span class="tag">Bootstrap</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">Next.js</span>
+              </div>
+            </article>
+
+            <article class="stack">
+              <div class="stack__head">
+                <i class="bi bi-tools" aria-hidden="true"></i>
+                <h3>DevOps & Tools</h3>
+              </div>
+              <div class="stack__pills">
+                <span class="tag">Git</span>
+                <span class="tag">Serena Dimensions</span>
+                <span class="tag">Jenkins</span>
+                <span class="tag">Postman</span>
+                <span class="tag">SoapUI</span>
+                <span class="tag">Swagger</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Oracle</span>
+                <span class="tag">Kibana</span>
+                <span class="tag">Firebase</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="cards cards--2 stack__soft">
+            <article class="card">
+              <h3>Fortalezas</h3>
+              <p>
+                Proactividad, aprendizaje continuo, responsabilidad,
+                comunicación y buen ambiente de equipo.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>Objetivo</h3>
+              <p>
+                Especializarme en backend, manteniendo visión full stack para
+                construir productos completos.
+              </p>
             </article>
           </div>
         </div>
@@ -630,13 +709,13 @@
         <div class="container">
           <div class="section__head">
             <h2>Contacto</h2>
-            <p>¿Hablamos? Puedes escribirme por email o LinkedIn.</p>
+            <p>San Sebastián de los Reyes (Madrid) · Respuesta rápida.</p>
           </div>
 
           <div class="contact">
             <div class="contact__card">
               <h3>Hablemos</h3>
-              <p class="muted">Respuesta rápida por email o LinkedIn.</p>
+              <p class="muted">Email, LinkedIn o GitHub.</p>
 
               <div class="contact__links">
                 <a class="contact__link" href="mailto:sanzromerom@gmail.com"
@@ -647,13 +726,24 @@
                 >
                 <a
                   class="contact__link"
-                  href="https://www.linkedin.com/in/manuel-sanz-romero"
+                  href="https://www.linkedin.com/in/manuel-sanz-romero-6a8797320/"
                   target="_blank"
                   rel="noopener"
                   >LinkedIn</a
                 >
-                <a class="contact__link" href="#" target="_blank" rel="noopener"
-                  >GitHub (añade tu link)</a
+                <a
+                  class="contact__link"
+                  href="https://github.com/Sanz-rm"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+                <a
+                  class="contact__link"
+                  href="https://www.youtube.com/@SanzDev17"
+                  target="_blank"
+                  rel="noopener"
+                  >YouTube (demos)</a
                 >
               </div>
             </div>
@@ -704,10 +794,10 @@
     <!-- INICIO FOOTER -->
     <footer class="footer">
       <div class="container footer__inner">
-        <p>
-          © <span id="year"></span> Manuel Sanz Romero. Hecho con HTML + CSS.
+        <p>© <span id="year"></span> Manuel Sanz Romero · Portfolio</p>
+        <p class="muted">
+          Backend Developer · San Sebastián de los Reyes, Madrid
         </p>
-        <p class="muted">San Sebastián de los Reyes, Madrid</p>
       </div>
     </footer>
     <!-- FIN FOOTER -->

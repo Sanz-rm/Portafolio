@@ -51,8 +51,8 @@
             </p>
 
             <p class="lead lead--folio">
-              Backend Java · Spring Boot · APIs REST/SOAP · soporte a producción
-              · trazabilidad y calidad
+              Backend Java · Spring Boot · APIs REST · Soporte a producción ·
+              Trazabilidad · Gestión de errores
             </p>
 
             <div class="hero__actions hero__actions--folio">
@@ -131,24 +131,33 @@
 
           <div class="about__grid">
             <div class="about__text">
-              <p class="about__lead">
+              <p class="about__p">
                 Desarrollador <strong>Full Stack</strong> con foco en
                 <strong>backend</strong>, trabajando con
                 <strong>Java, Spring Boot</strong> y <strong>.NET</strong> para
-                construir APIs robustas y mantenibles.
+                <strong>Java, Spring Boot</strong> para construir APIs robustas
+                y mantenibles, aplicando una arquitectura modular tipo
+                <strong>microservicios</strong>.
               </p>
 
               <p class="about__p">
                 Experiencia en entornos productivos con
-                <strong>REST/SOAP</strong>, soporte a incidencias, trazabilidad
-                y documentación técnica, además de proyectos personales con
-                frontend moderno (Angular/Vue).
+                <strong>REST/SOAP</strong>, buena gestión de errores,
+                trazabilidad (logs y monitorización) y soporte a incidencias.
+                Documentación técnica de endpoints con
+                <strong>Swagger</strong> para facilitar el mantenimiento.
               </p>
 
               <p class="about__p">
-                Me gusta mantenerme ocupado, aprender de forma proactiva y
-                asumir responsabilidades. Disfruto del trabajo en equipo y de
-                crear un ambiente colaborativo y productivo.
+                Sigo aprendiendo creando <strong>apps personales</strong>, desde
+                aplicaciones sencillas para el día a día, hasta proyectos más
+                profesionales con visión de uso para <strong>negocios</strong>.
+              </p>
+
+              <p class="about__p">
+                Persona ambiciosa, proactiva y orientada a asumir
+                responsabilidades. Disfruto del trabajo en equipo y de crear un
+                ambiente <strong>colaborativo</strong> y productivo.
               </p>
             </div>
 
@@ -158,8 +167,8 @@
                   <i class="bi bi-code-slash"></i>
                 </div>
                 <div class="kpi__content">
-                  <div class="kpi__value">2~</div>
-                  <div class="kpi__label">Años de experiencia</div>
+                  <div class="kpi__value" id="xpValue">—</div>
+                  <div class="kpi__label">Tiempo de experiencia</div>
                 </div>
               </article>
 
@@ -178,7 +187,7 @@
                   <i class="bi bi-layers"></i>
                 </div>
                 <div class="kpi__content">
-                  <div class="kpi__value">10+</div>
+                  <div class="kpi__value">20+</div>
                   <div class="kpi__label">Tecnologías principales</div>
                 </div>
               </article>
@@ -844,6 +853,41 @@
           setTimeout(tick, SPEED_DELETE);
         }
       }
+
+      const START_DATE = "2024-08-17";
+
+      function calcExperienceFrom(startDateStr) {
+        const start = new Date(startDateStr);
+        const now = new Date();
+
+        let totalMonths =
+          (now.getFullYear() - start.getFullYear()) * 12 +
+          (now.getMonth() - start.getMonth());
+
+        if (now.getDate() < start.getDate()) totalMonths--;
+
+        totalMonths = Math.max(0, totalMonths);
+
+        const years = totalMonths / 12;
+        const years1Dec = Math.round(years * 10) / 10;
+
+        const y = Math.floor(totalMonths / 12);
+        const m = totalMonths % 12;
+
+        const parts = [];
+        if (y > 0) parts.push(`${y} año${y !== 1 ? "s" : ""}`);
+        if (m > 0) parts.push(`${m} mes${m !== 1 ? "es" : ""}`);
+
+        return {
+          value: `${years1Dec}+`,
+          text: parts.length ? parts.join(" y ") : "0 meses",
+        };
+      }
+
+      const xp = calcExperienceFrom(START_DATE);
+
+      const xpValueEl = document.getElementById("xpValue");
+      if (xpValueEl) xpValueEl.textContent = xp.text;
 
       tick();
     </script>

@@ -522,17 +522,11 @@ a:hover {
   align-items: start;
 }
 
-.about__lead {
+.about__p {
   margin: 0 0 14px;
   font-size: 1.08rem;
   line-height: 1.75;
-  color: rgba(255, 255, 255, 0.86);
-}
-
-.about__p {
-  margin: 0 0 14px;
-  line-height: 1.75;
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(255, 255, 255, 0.80);
 }
 
 .about__p:last-child {
@@ -541,12 +535,12 @@ a:hover {
 
 .about__kpis {
   display: grid;
-  gap: 14px;
+  gap: 16px;
 }
 
 .kpi {
   display: grid;
-  grid-template-columns: 70px 1fr;
+  grid-template-columns: 80px 1fr;
   gap: 14px;
   align-items: center;
   padding: 16px;
@@ -572,11 +566,17 @@ a:hover {
   font-weight: 900;
 }
 
-.kpi__value {
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 1;
+.kpi__value{
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.kpi__sub{
+  margin-top: .25rem;
+  font-size: .95rem;
+  opacity: .75;
+  line-height: 1.2;
 }
 
 .kpi__label {

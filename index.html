@@ -22,13 +22,23 @@
     <header class="header">
       <div class="container header__inner">
         <nav class="nav" aria-label="Navegación principal">
-          <a href="#about">Sobre mí</a>
-          <a href="#experience">Experiencia</a>
-          <a href="#education">Educación</a>
-          <a href="#certs">Certificados</a>
-          <a href="#projects">Proyectos</a>
-          <a href="#skills">Stack</a>
-          <a class="nav__cta" href="#contact">Contacto</a>
+          <button
+            class="nav__toggle"
+            type="button"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+          >
+            <span class="nav__burger" aria-hidden="true"></span>
+          </button>
+
+          <div class="nav__menu" id="navMenu">
+            <a href="#about">Sobre mí</a>
+            <a href="#experience">Trayectoria</a>
+            <a href="#certs">Certificados</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#skills">Stack</a>
+            <a class="nav__cta" href="#contact">Contacto</a>
+          </div>
         </nav>
       </div>
     </header>
@@ -378,26 +388,25 @@
           <div class="list">
             <article class="list__item">
               <div>
-                <h3>Analista Java de Aplicaciones Empresariales</h3>
-                <p class="muted">Ene - Mar 2022</p>
-              </div>
-              <a
-                class="btn btn--small"
-                href="assets/Diploma%20-%20Analista%20Java%20-%20Manuel%20Sanz%20Romero.pdf"
-                target="_blank"
-                rel="noopener"
-                >Ver diploma</a
-              >
-            </article>
-
-            <article class="list__item">
-              <div>
                 <h3>Spring Framework y Spring Boot</h3>
                 <p class="muted">Abr - Jun 2022</p>
               </div>
               <a
                 class="btn btn--small"
                 href="assets/Diploma%20-%20Spring%20Boot%20-%20Manuel%20Sanz%20Romero.pdf"
+                target="_blank"
+                rel="noopener"
+                >Ver diploma</a
+              >
+            </article>
+            <article class="list__item">
+              <div>
+                <h3>Analista Java de Aplicaciones Empresariales</h3>
+                <p class="muted">Ene - Mar 2022</p>
+              </div>
+              <a
+                class="btn btn--small"
+                href="assets/Diploma%20-%20Analista%20Java%20-%20Manuel%20Sanz%20Romero.pdf"
                 target="_blank"
                 rel="noopener"
                 >Ver diploma</a
@@ -413,10 +422,33 @@
         <div class="container">
           <div class="section__head">
             <h2>Proyectos</h2>
+            <div class="projects__filters" aria-label="Filtros de proyectos">
+              <button
+                class="projects__filter is-active"
+                type="button"
+                data-filter="all"
+              >
+                Todos
+              </button>
+              <button
+                class="projects__filter"
+                type="button"
+                data-filter="profesional"
+              >
+                Profesionales
+              </button>
+              <button
+                class="projects__filter"
+                type="button"
+                data-filter="personal"
+              >
+                Personales
+              </button>
+            </div>
           </div>
 
-          <div class="projects">
-            <article class="project">
+          <div class="projects" id="projectsGrid">
+            <article class="project" data-type="personal">
               <div class="project__thumb">
                 <div class="project__placeholder">MiDespensa</div>
               </div>
@@ -442,13 +474,13 @@
                     href="https://github.com/Sanz-rm/MiDespensa"
                     target="_blank"
                     rel="noopener"
-                    >GitHub</a
+                    >Código</a
                   >
                 </div>
               </div>
             </article>
 
-            <article class="project">
+            <article class="project" data-type="profesional">
               <div class="project__thumb">
                 <div class="project__placeholder">ControlPresencia</div>
               </div>
@@ -473,13 +505,13 @@
                     href="https://github.com/Sanz-rm/ControlPresencia"
                     target="_blank"
                     rel="noopener"
-                    >GitHub</a
+                    >Código</a
                   >
                 </div>
               </div>
             </article>
 
-            <article class="project">
+            <article class="project" data-type="profesional">
               <div class="project__thumb">
                 <div class="project__placeholder">MyProTask</div>
               </div>
@@ -505,13 +537,13 @@
                     href="https://github.com/Sanz-rm/MyProTask"
                     target="_blank"
                     rel="noopener"
-                    >GitHub</a
+                    >Código</a
                   >
                 </div>
               </div>
             </article>
 
-            <article class="project">
+            <article class="project" data-type="profesional">
               <div class="project__thumb">
                 <div class="project__placeholder">ProjectMaster</div>
               </div>
@@ -537,13 +569,13 @@
                     href="https://github.com/Sanz-rm/ProjectMaster"
                     target="_blank"
                     rel="noopener"
-                    >GitHub</a
+                    >Código</a
                   >
                 </div>
               </div>
             </article>
 
-            <article class="project">
+            <article class="project" data-type="profesional">
               <div class="project__thumb">
                 <div class="project__placeholder">PDFFusion</div>
               </div>
@@ -567,7 +599,7 @@
               </div>
             </article>
 
-            <article class="project">
+            <article class="project" data-type="personal">
               <div class="project__thumb">
                 <div class="project__placeholder">VotaFMS</div>
               </div>
@@ -593,13 +625,13 @@
                     href="https://github.com/Sanz-rm/VotaFMS"
                     target="_blank"
                     rel="noopener"
-                    >GitHub</a
+                    >Código</a
                   >
                 </div>
               </div>
             </article>
 
-            <article class="project">
+            <article class="project" data-type="profesional">
               <div class="project__thumb">
                 <div class="project__placeholder">M&L Inmobiliaria</div>
               </div>
@@ -751,7 +783,7 @@
                   href="https://www.youtube.com/@SanzDev17"
                   target="_blank"
                   rel="noopener"
-                  >YouTube (demos)</a
+                  >YouTube</a
                 >
               </div>
             </div>
@@ -889,6 +921,151 @@
       if (xpValueEl) xpValueEl.textContent = xp.text;
 
       tick();
+
+      (function initProjectFilters() {
+        const filterButtons = document.querySelectorAll(".projects__filter");
+        const grid = document.getElementById("projectsGrid");
+        const projects = Array.from(grid?.querySelectorAll(".project") || []);
+
+        if (!filterButtons.length || !grid || !projects.length) return;
+
+        const EXIT_MS = 220;
+
+        function setActive(btn) {
+          filterButtons.forEach((b) => b.classList.remove("is-active"));
+          btn.classList.add("is-active");
+        }
+
+        function getRects() {
+          const map = new Map();
+          projects.forEach((p) => {
+            if (!p.classList.contains("is-hidden")) {
+              map.set(p, p.getBoundingClientRect());
+            }
+          });
+          return map;
+        }
+
+        function playFLIP(beforeRects) {
+          const afterRects = getRects();
+
+          projects.forEach((p) => {
+            const before = beforeRects.get(p);
+            const after = afterRects.get(p);
+            if (!before || !after) return;
+
+            const dx = before.left - after.left;
+            const dy = before.top - after.top;
+
+            if (dx === 0 && dy === 0) return;
+
+            p.style.transform = `translate(${dx}px, ${dy}px)`;
+            p.style.transition = "transform 0ms";
+
+            requestAnimationFrame(() => {
+              p.style.transition =
+                "transform 380ms cubic-bezier(0.22, 1, 0.36, 1), opacity 200ms ease";
+              p.style.transform = "";
+            });
+          });
+        }
+
+        function applyFilter(filter) {
+          // 1) Guardamos posiciones antes
+          const beforeRects = getRects();
+
+          // 2) Marcamos cuáles se van (fade rápido) y cuáles se quedan/entran
+          projects.forEach((p) => {
+            const type = p.dataset.type;
+            const shouldShow = filter === "all" || type === filter;
+
+            if (!shouldShow && !p.classList.contains("is-hidden")) {
+              p.classList.add("is-exiting");
+            }
+          });
+
+          // 3) Tras el exit, ocultamos de verdad y mostramos los que entran
+          setTimeout(() => {
+            projects.forEach((p) => {
+              const type = p.dataset.type;
+              const shouldShow = filter === "all" || type === filter;
+
+              if (!shouldShow) {
+                p.classList.add("is-hidden");
+                p.classList.remove("is-exiting");
+              } else {
+                // entra: lo mostramos ya, sin parpadeo
+                if (p.classList.contains("is-hidden"))
+                  p.classList.remove("is-hidden");
+                p.classList.remove("is-exiting");
+                p.style.opacity = "1";
+              }
+            });
+
+            // 4) FLIP para que “deslicen” a su nueva posición
+            playFLIP(beforeRects);
+          }, EXIT_MS);
+        }
+
+        filterButtons.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            const filter = btn.dataset.filter || "all";
+            setActive(btn);
+            applyFilter(filter);
+          });
+        });
+
+        applyFilter("all");
+      })();
+
+      (function initMobileNav() {
+        const nav = document.querySelector(".nav");
+        const btn = document.querySelector(".nav__toggle");
+        const menu = document.getElementById("navMenu");
+        if (!nav || !btn || !menu) return;
+
+        const MOBILE_BP = 980;
+        const isMobile = () =>
+          window.matchMedia(`(max-width:${MOBILE_BP}px)`).matches;
+
+        function close() {
+          nav.classList.remove("is-open");
+          btn.setAttribute("aria-expanded", "false");
+          btn.setAttribute("aria-label", "Abrir menú");
+        }
+
+        function open() {
+          nav.classList.add("is-open");
+          btn.setAttribute("aria-expanded", "true");
+          btn.setAttribute("aria-label", "Cerrar menú");
+        }
+
+        btn.addEventListener("click", () => {
+          if (!isMobile()) return;
+          nav.classList.contains("is-open") ? close() : open();
+        });
+
+        menu.querySelectorAll("a").forEach((a) =>
+          a.addEventListener("click", () => {
+            if (isMobile()) close();
+          }),
+        );
+
+        document.addEventListener("click", (e) => {
+          if (!isMobile()) return;
+          if (!nav.classList.contains("is-open")) return;
+          if (!nav.contains(e.target)) close();
+        });
+
+        document.addEventListener("keydown", (e) => {
+          if (!isMobile()) return;
+          if (e.key === "Escape") close();
+        });
+
+        window.addEventListener("resize", () => {
+          if (!isMobile()) close(); // si vuelves a escritorio, se cierra y queda como siempre
+        });
+      })();
     </script>
     <!-- FIN SCRIPT -->
   </body>

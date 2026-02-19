@@ -1003,10 +1003,6 @@
               </label>
 
               <button class="btn btn--primary" type="submit">Enviar</button>
-              <p class="muted small">
-                *Este formulario no envía nada sin backend. Si quieres, te lo
-                conecto a EmailJS o Formspree.
-              </p>
             </form>
           </div>
         </div>
@@ -1017,7 +1013,7 @@
     <!-- INICIO FOOTER -->
     <footer class="footer">
       <div class="container footer__inner">
-        <p>© <span id="year"></span> Manuel Sanz Romero · Portfolio</p>
+        <p>© <span id="year"></span> Manuel Sanz Romero · Portafolio</p>
         <p class="muted">
           Backend Developer · San Sebastián de los Reyes, Madrid
         </p>
@@ -1029,10 +1025,14 @@
       <i class="bi bi-arrow-up"></i>
     </a>
 
+    <!-- CONEXION EMAILJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
     <!-- INICIO SCRIPT -->
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
 
+      // INICIO EFECTO ESCRITURA
       const roles = ["Backend", "Frontend", "Full Stack"];
       const typingEl = document.getElementById("typing");
 
@@ -1071,7 +1071,9 @@
           setTimeout(tick, SPEED_DELETE);
         }
       }
+      // FIN EFECTO ESCRITURA
 
+      // INICIO CALCULADORA DE EXPERIENCIA
       const START_DATE = "2024-08-17";
 
       function calcExperienceFrom(startDateStr) {
@@ -1108,7 +1110,10 @@
       if (xpValueEl) xpValueEl.textContent = xp.text;
 
       tick();
+      // FIN CALCULADORA DE EXPERIENCIA
 
+
+      // INICIO PROJECT FILTERS
       (function initProjectFilters() {
         const filterButtons = document.querySelectorAll(".projects__filter");
         const grid = document.getElementById("projectsGrid");
@@ -1199,7 +1204,9 @@
 
         applyFilter("all");
       })();
+      // FIN PROJECT FILTERS
 
+      // INICIO ANIMACIONES Y NAV
       (function initMobileNav() {
         const nav = document.querySelector(".nav");
         const btn = document.querySelector(".nav__toggle");
@@ -1248,6 +1255,21 @@
           if (!isMobile()) close();
         });
       })();
+      
+      (function initToTopButton() {
+        const btn = document.getElementById("toTop");
+        if (!btn) return;
+
+        const THRESHOLD = 80;
+
+        function update() {
+          const y = window.scrollY || document.documentElement.scrollTop;
+          btn.classList.toggle("is-visible", y > THRESHOLD);
+        }
+
+        update();
+        window.addEventListener("scroll", update, { passive: true });
+      })();
 
       (function initToTopButton() {
         const btn = document.getElementById("toTop");
@@ -1263,6 +1285,58 @@
         update();
         window.addEventListener("scroll", update, { passive: true });
       })();
+      // FIN ANIMACIONES Y NAV
+
+      // INICIO CONTACT FORM
+      (function() {
+        emailjs.init({
+          publicKey: "0-DwyXeCGJi1pF3lJ",
+        });
+      })();
+
+      const contactForm = document.querySelector('.form');
+      const submitBtn = contactForm.querySelector('button[type="submit"]');
+
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(event) {
+          event.preventDefault(); 
+
+          const originalBtnText = submitBtn.textContent;
+          submitBtn.textContent = 'Enviando...';
+          submitBtn.disabled = true;
+
+          const serviceID = 'service_ozkgvgg'; 
+          const templateID = 'template_qnpvuiq'; 
+
+          emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+              submitBtn.textContent = '¡Mensaje Enviado!';
+              submitBtn.style.backgroundColor = '#28a745'; 
+              submitBtn.style.borderColor = '#28a745';
+              contactForm.reset(); 
+              
+              setTimeout(() => {
+                submitBtn.textContent = originalBtnText;
+                submitBtn.style.backgroundColor = '';
+                submitBtn.style.borderColor = '';
+                submitBtn.disabled = false;
+              }, 3000);
+            }, (err) => {
+              submitBtn.textContent = 'Error al enviar';
+              submitBtn.style.backgroundColor = '#dc3545'; 
+              submitBtn.style.borderColor = '#dc3545';
+              console.log(JSON.stringify(err));
+              
+              setTimeout(() => {
+                submitBtn.textContent = originalBtnText;
+                submitBtn.style.backgroundColor = '';
+                submitBtn.style.borderColor = '';
+                submitBtn.disabled = false;
+              }, 3000);
+            });
+        });
+      }
+      // FIN CONTACT FORM
     </script>
     <!-- FIN SCRIPT -->
   </body>

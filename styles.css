@@ -303,12 +303,10 @@ a:hover {
 }
 
 @keyframes blink {
-
   0%,
   45% {
     opacity: 1;
   }
-
   46%,
   100% {
     opacity: 0;
@@ -439,6 +437,7 @@ a:hover {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4px);
 }
+
 .note i {
   font-size: 24px;
   line-height: 1;
@@ -491,12 +490,10 @@ a:hover {
 }
 
 @keyframes floaty {
-
   0%,
   100% {
     transform: translateY(0);
   }
-
   50% {
     transform: translateY(-10px);
   }
@@ -1319,6 +1316,5 @@ textarea:focus {
   font-size: 18px;
   line-height: 1;
 }
-
 
 /* FIN SECCION RESPONSIVE */

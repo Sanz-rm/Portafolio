@@ -635,6 +635,41 @@ a:hover {
   line-height: 1.65;
 }
 
+.card--wide {
+  padding: 20px;
+}
+
+.card__head-inline {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.card__head-inline i {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: rgba(19, 135, 193, 0.14);
+  border: 1px solid rgba(19, 135, 193, 0.18);
+  color: rgba(19, 135, 193, 0.95);
+  font-size: 18px;
+}
+
+.card__head-inline h3 {
+  margin: 0;
+  font-size: 1.12rem;
+  letter-spacing: -0.2px;
+}
+
+.tags--soft {
+  margin-top: 16px;
+}
+
 /* FIN SECCION CARDS */
 
 /* INICIO SECCION RESUME */

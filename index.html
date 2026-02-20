@@ -191,7 +191,7 @@
                   <i class="bi bi-diagram-3"></i>
                 </div>
                 <div class="kpi__content">
-                  <div class="kpi__value">7+</div>
+                  <div class="kpi__value"><span class="counter" data-target="7">0</span>+</div>
                   <div class="kpi__label">Proyectos publicados</div>
                 </div>
               </article>
@@ -201,7 +201,7 @@
                   <i class="bi bi-layers"></i>
                 </div>
                 <div class="kpi__content">
-                  <div class="kpi__value">20+</div>
+                  <div class="kpi__value"><span class="counter" data-target="20">0</span>+</div>
                   <div class="kpi__label">Tecnologías principales</div>
                 </div>
               </article>
@@ -1085,33 +1085,57 @@
           (now.getMonth() - start.getMonth());
 
         if (now.getDate() < start.getDate()) totalMonths--;
-
         totalMonths = Math.max(0, totalMonths);
-
-        const years = totalMonths / 12;
-        const years1Dec = Math.round(years * 10) / 10;
 
         const y = Math.floor(totalMonths / 12);
         const m = totalMonths % 12;
 
         const parts = [];
-        if (y > 0) parts.push(`${y} año${y !== 1 ? "s" : ""}`);
-        if (m > 0) parts.push(`${m} mes${m !== 1 ? "es" : ""}`);
+        
+        if (y > 0) parts.push(`<span class="counter" data-target="${y}">0</span> año${y !== 1 ? "s" : ""}`);
+        if (m > 0) parts.push(`<span class="counter" data-target="${m}">0</span> mes${m !== 1 ? "es" : ""}`);
 
-        return {
-          value: `${years1Dec}+`,
-          text: parts.length ? parts.join(" y ") : "0 meses",
-        };
+        return parts.length ? parts.join(" y ") : `<span class="counter" data-target="0">0</span> meses`;
       }
 
-      const xp = calcExperienceFrom(START_DATE);
-
       const xpValueEl = document.getElementById("xpValue");
-      if (xpValueEl) xpValueEl.textContent = xp.text;
+      if (xpValueEl) xpValueEl.innerHTML = calcExperienceFrom(START_DATE);
 
-      tick();
+      const counters = document.querySelectorAll('.counter');
+      const speed = 300;
+
+      const animateCounters = (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const counter = entry.target;
+            const target = +counter.getAttribute('data-target');
+            
+            const updateCount = () => {
+              const count = +counter.innerText;
+              const inc = target / speed;
+
+              if (count < target) {
+                counter.innerText = Math.ceil(count + (inc > 1 ? inc : 1));
+                setTimeout(updateCount, 80); 
+              } else {
+                counter.innerText = target;
+              }
+            };
+
+            updateCount();
+            observer.unobserve(counter); 
+          }
+        });
+      };
+
+      const counterObserver = new IntersectionObserver(animateCounters, {
+        threshold: 0.5 
+      });
+
+      counters.forEach(counter => {
+        counterObserver.observe(counter);
+      });
       // FIN CALCULADORA DE EXPERIENCIA
-
 
       // INICIO PROJECT FILTERS
       (function initProjectFilters() {

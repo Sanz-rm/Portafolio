@@ -1212,6 +1212,7 @@ textarea:focus {
 
   .hero__imageWrap {
     margin: 0 auto;
+    width: min(300px, 80vw);
   }
 
   .hero__actions--folio .btn {

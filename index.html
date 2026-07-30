@@ -1,1374 +1,1116 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manuel Sanz Romero | Portfolio</title>
-    <meta
-      name="description"
-      content="Portfolio de Manuel Sanz Romero: proyectos, experiencia, formación, certificados y contacto."
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
-  </head>
 
-  <body>
-    <a class="skip-link" href="#main">Saltar al contenido</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manuel Sanz Romero | Portfolio</title>
+  <meta name="description"
+    content="Portfolio de Manuel Sanz Romero: proyectos, experiencia, formación, certificados y contacto." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
 
-    <!-- INICIO HEADER -->
-    <header class="header">
-      <div class="container header__inner">
-        <nav class="nav" aria-label="Navegación principal">
-          <button
-            class="nav__toggle"
-            type="button"
-            aria-label="Abrir menú"
-            aria-controls="navMenu"
-            aria-expanded="false"
-          >
-            <span class="nav__burger" aria-hidden="true"></span>
-          </button>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
 
-          <div class="nav__menu" id="navMenu">
-            <a href="#top">Inicio</a>
-            <a href="#about">Sobre mí</a>
-            <a href="#experience">Trayectoria</a>
-            <a href="#certs">Certificados</a>
-            <a href="#projects">Proyectos</a>
-            <a href="#skills">Stack</a>
-            <a class="nav__cta" href="#contact">Contacto</a>
+  <!-- INICIO HEADER -->
+  <header class="header">
+    <div class="container header__inner">
+      <nav class="nav" aria-label="Navegación principal">
+        <button class="nav__toggle" type="button" aria-label="Abrir menú" aria-controls="navMenu" aria-expanded="false">
+          <span class="nav__burger" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav__menu" id="navMenu">
+          <a href="#top">Inicio</a>
+          <a href="#about">Sobre mí</a>
+          <a href="#experience">Trayectoria</a>
+          <a href="#certs">Certificados</a>
+          <a href="#projects">Proyectos</a>
+          <a href="#skills">Stack</a>
+          <a class="nav__cta" href="#contact">Contacto</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- FIN HEADER -->
+
+  <main id="main">
+    <!-- INICIO HERO -->
+    <section id="top" class="hero hero--folio">
+      <div class="container hero__grid hero__grid--folio">
+        <div class="hero__content hero__content--folio">
+          <h1 class="hero__title">
+            Hola, soy <span class="accent">Manuel</span><br />
+            <span class="accent">Sanz</span>
+          </h1>
+
+          <p class="hero__typing">
+            <span class="muted">Desarrollador </span>
+            <span id="typing" class="typing"></span><span class="caret" aria-hidden="true">|</span>
+          </p>
+
+          <p class="lead lead--folio">
+            Backend Java · Spring Boot · APIs REST · Soporte a producción ·
+            Trazabilidad · Gestión de errores
+          </p>
+
+          <div class="hero__actions hero__actions--folio">
+            <a class="btn btn--primary" href="#projects">Ver proyectos</a>
+            <a class="btn btn--ghost" href="#contact">Contactar</a>
+            <a class="btn btn--text" href="assets/Manuel_Sanz_Romero_CV_2026.pdf" target="_blank"
+              rel="noopener">Descargar CV</a>
           </div>
-        </nav>
+
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/manuel-sanz-romero-6a8797320/" target="_blank" rel="noopener"
+              aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/Sanz-rm" target="_blank" rel="noopener" aria-label="GitHub"><i
+                class="bi bi-github"></i></a>
+            <a href="https://www.youtube.com/@SanzDev17" target="_blank" rel="noopener" aria-label="YouTube"><i
+                class="bi bi-youtube"></i></a>
+            <a href="mailto:sanzromerom@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="hero__photo hero__photo--folio">
+          <div class="hero__imageWrap">
+            <div class="hero__imageClip">
+              <img src="assets/foto_perfil_oscuro.png" alt="Foto de Manuel Sanz Romero" />
+            </div>
+
+            <div class="note note--design float1">
+              <i class="devicon-spring-plain"></i>
+              <span class="note__text">Spring Boot</span>
+            </div>
+            <div class="note note--code float2">
+              <i class="bi bi-braces"></i>
+              <span class="note__text">APIs REST</span>
+            </div>
+            <div class="note note--ideas float3">
+              <i class="bi bi-database"></i>
+              <span class="note__text">SQL</span>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- FIN HERO -->
+
+    <!-- INICIO ABOUT -->
+    <section id="about" class="section section--about">
+      <div class="container">
+        <div class="about__head">
+          <h2 class="about__title">Sobre mí</h2>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__text">
+            <p class="about__p">
+              Desarrollador <strong>Full Stack</strong> con foco en
+              <strong>backend</strong>, trabajando con
+              <strong>Java, Spring Boot</strong> para construir APIs robustas
+              y mantenibles, aplicando una arquitectura modular tipo
+              <strong>microservicios</strong>.
+            </p>
+
+            <p class="about__p">
+              Experiencia en entornos productivos con
+              <strong>REST/SOAP</strong>, buena gestión de errores,
+              trazabilidad (logs y monitorización) y soporte a incidencias.
+              Documentación técnica de endpoints con
+              <strong>Swagger</strong> para facilitar el mantenimiento.
+            </p>
+
+            <p class="about__p">
+              Sigo aprendiendo creando <strong>apps personales</strong>, desde
+              aplicaciones sencillas para el día a día, hasta proyectos más
+              profesionales con visión de uso para <strong>negocios</strong>.
+            </p>
+
+            <p class="about__p">
+              Persona ambiciosa, proactiva y orientada a asumir
+              responsabilidades. Disfruto del trabajo en equipo y de crear un
+              ambiente <strong>colaborativo</strong> y productivo.
+            </p>
+          </div>
+
+          <div class="about__kpis">
+            <article class="kpi">
+              <div class="kpi__icon" aria-hidden="true">
+                <i class="bi bi-clock-history"></i>
+              </div>
+              <div class="kpi__content">
+                <div class="kpi__value" id="xpValue">—</div>
+                <div class="kpi__label">Tiempo de experiencia</div>
+              </div>
+            </article>
+
+            <article class="kpi">
+              <div class="kpi__icon" aria-hidden="true">
+                <i class="bi bi-diagram-3"></i>
+              </div>
+              <div class="kpi__content">
+                <div class="kpi__value"><span class="counter" data-target="7">0</span>+</div>
+                <div class="kpi__label">Proyectos publicados</div>
+              </div>
+            </article>
+
+            <article class="kpi">
+              <div class="kpi__icon" aria-hidden="true">
+                <i class="bi bi-layers"></i>
+              </div>
+              <div class="kpi__content">
+                <div class="kpi__value"><span class="counter" data-target="20">0</span>+</div>
+                <div class="kpi__label">Tecnologías principales</div>
+              </div>
+            </article>
+          </div>
+        </div>
       </div>
-    </header>
-    <!-- FIN HEADER -->
+    </section>
+    <!-- FIN ABOUT -->
 
-    <main id="main">
-      <!-- INICIO HERO -->
-      <section id="top" class="hero hero--folio">
-        <div class="container hero__grid hero__grid--folio">
-          <div class="hero__content hero__content--folio">
-            <h1 class="hero__title">
-              Hola, soy <span class="accent">Manuel</span><br />
-              <span class="accent">Sanz</span>
-            </h1>
-
-            <p class="hero__typing">
-              <span class="muted">Desarrollador </span>
-              <span id="typing" class="typing"></span
-              ><span class="caret" aria-hidden="true">|</span>
-            </p>
-
-            <p class="lead lead--folio">
-              Backend Java · Spring Boot · APIs REST · Soporte a producción ·
-              Trazabilidad · Gestión de errores
-            </p>
-
-            <div class="hero__actions hero__actions--folio">
-              <a class="btn btn--primary" href="#projects">Ver proyectos</a>
-              <a class="btn btn--ghost" href="#contact">Contactar</a>
-              <a
-                class="btn btn--text"
-                href="assets/Manuel_Sanz_Romero_CV_2026.pdf"
-                target="_blank"
-                rel="noopener"
-                >Descargar CV</a
-              >
-            </div>
-
-            <div class="social-links">
-              <a
-                href="https://www.linkedin.com/in/manuel-sanz-romero-6a8797320/"
-                target="_blank"
-                rel="noopener"
-                aria-label="LinkedIn"
-                ><i class="bi bi-linkedin"></i
-              ></a>
-              <a
-                href="https://github.com/Sanz-rm"
-                target="_blank"
-                rel="noopener"
-                aria-label="GitHub"
-                ><i class="bi bi-github"></i
-              ></a>
-              <a
-                href="https://www.youtube.com/@SanzDev17"
-                target="_blank"
-                rel="noopener"
-                aria-label="YouTube"
-                ><i class="bi bi-youtube"></i
-              ></a>
-              <a href="mailto:sanzromerom@gmail.com" aria-label="Email"
-                ><i class="bi bi-envelope"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="hero__photo hero__photo--folio">
-            <div class="hero__imageWrap">
-              <div class="hero__imageClip">
-                <img
-                  src="assets/foto_perfil_oscuro.png"
-                  alt="Foto de Manuel Sanz Romero"
-                />
-              </div>
-
-              <div class="note note--design float1">
-                <i class="devicon-spring-plain"></i>
-                <span class="note__text">Spring Boot</span>
-              </div>
-              <div class="note note--code float2">
-                <i class="bi bi-braces"></i>
-                <span class="note__text">APIs REST</span>
-              </div>
-              <div class="note note--ideas float3">
-                <i class="bi bi-database"></i>
-                <span class="note__text">SQL</span>
-              </div>
-          </div>
+    <!-- INICIO RESUME -->
+    <section id="experience" class="section section--alt">
+      <div class="container">
+        <div class="section__head section__head--tight">
+          <h2>Trayectoria</h2>
         </div>
-      </section>
-      <!-- FIN HERO -->
 
-      <!-- INICIO ABOUT -->
-      <section id="about" class="section section--about">
-        <div class="container">
-          <div class="about__head">
-            <h2 class="about__title">Sobre mí</h2>
-          </div>
+        <div class="resume__grid">
+          <div class="resume__col">
+            <h3 class="resume__title">Experiencia</h3>
 
-          <div class="about__grid">
-            <div class="about__text">
-              <p class="about__p">
-                Desarrollador <strong>Full Stack</strong> con foco en
-                <strong>backend</strong>, trabajando con
-                <strong>Java, Spring Boot</strong> para construir APIs robustas
-                y mantenibles, aplicando una arquitectura modular tipo
-                <strong>microservicios</strong>.
-              </p>
+            <div class="resume__timeline">
+              <article class="resume__item">
+                <span class="resume__dot" aria-hidden="true"></span>
 
-              <p class="about__p">
-                Experiencia en entornos productivos con
-                <strong>REST/SOAP</strong>, buena gestión de errores,
-                trazabilidad (logs y monitorización) y soporte a incidencias.
-                Documentación técnica de endpoints con
-                <strong>Swagger</strong> para facilitar el mantenimiento.
-              </p>
+                <div class="resume__card">
+                  <h4 class="resume__role">Desarrollador Java / Spring Boot</h4>
+                  <span class="resume__date">May 2026 - Actualidad</span>
 
-              <p class="about__p">
-                Sigo aprendiendo creando <strong>apps personales</strong>, desde
-                aplicaciones sencillas para el día a día, hasta proyectos más
-                profesionales con visión de uso para <strong>negocios</strong>.
-              </p>
+                  <p class="resume__company">
+                    Cobser Consulting · Sopra HR Software · Madrid
+                  </p>
 
-              <p class="about__p">
-                Persona ambiciosa, proactiva y orientada a asumir
-                responsabilidades. Disfruto del trabajo en equipo y de crear un
-                ambiente <strong>colaborativo</strong> y productivo.
-              </p>
-            </div>
+                  <p class="resume__meta">
+                    Java · Spring Boot · APIs REST · Swagger · SQL · Unix/Linux ·
+                    Tomcat · Git · COBOL · Jira · IA con Agentes
+                  </p>
 
-            <div class="about__kpis">
-              <article class="kpi">
-                <div class="kpi__icon" aria-hidden="true">
-                  <i class="bi bi-clock-history"></i>
-                </div>
-                <div class="kpi__content">
-                  <div class="kpi__value" id="xpValue">—</div>
-                  <div class="kpi__label">Tiempo de experiencia</div>
-                </div>
-              </article>
-
-              <article class="kpi">
-                <div class="kpi__icon" aria-hidden="true">
-                  <i class="bi bi-diagram-3"></i>
-                </div>
-                <div class="kpi__content">
-                  <div class="kpi__value"><span class="counter" data-target="7">0</span>+</div>
-                  <div class="kpi__label">Proyectos publicados</div>
-                </div>
-              </article>
-
-              <article class="kpi">
-                <div class="kpi__icon" aria-hidden="true">
-                  <i class="bi bi-layers"></i>
-                </div>
-                <div class="kpi__content">
-                  <div class="kpi__value"><span class="counter" data-target="20">0</span>+</div>
-                  <div class="kpi__label">Tecnologías principales</div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- FIN ABOUT -->
-
-      <!-- INICIO RESUME -->
-      <section id="experience" class="section section--alt">
-        <div class="container">
-          <div class="section__head section__head--tight">
-            <h2>Trayectoria</h2>
-          </div>
-
-          <div class="resume__grid">
-            <div class="resume__col">
-              <h3 class="resume__title">Experiencia</h3>
-
-              <div class="resume__timeline">
-                <article class="resume__item">
-                  <span class="resume__dot" aria-hidden="true"></span>
-
-                  <div class="resume__card">
-                    <h4 class="resume__role">Desarrollador Backend Java</h4>
-                    <span class="resume__date">Oct 2024 - Actualidad</span>
-                    <p class="resume__company">
-                      VILT · Línea Directa Aseguradora · Madrid
-                    </p>
-                    <p class="resume__meta">
-                      Java · Spring Boot · REST/SOAP · Oracle/DB2 · GitLab ·
-                      Jenkins Pipelines · Serena Dimensions · Postman · SoapUI ·
-                      Swagger
-                    </p>
-
-                    <ul class="resume__bullets">
-                      <li>
-                        Desarrollo y mantenimiento de APIs REST con Spring Boot
-                        (Java), control de excepciones y trazabilidad.
-                      </li>
-                      <li>
-                        Pruebas de servicios REST/SOAP con Postman y SoapUI.
-                      </li>
-                      <li>
-                        Documentación con Swagger y diagramas de flujo para
-                        mantenimiento.
-                      </li>
-                      <li>
-                        SQL en Oracle para gestión y seguimiento de datos
-                        internos y reejecución controlada de procesos.
-                      </li>
-                      <li>
-                        Integración con programas COBOL para obtener datos de
-                        negocio (DB2) y consumirlos desde servicios.
-                      </li>
-                      <li>
-                        Gestión y automatización de despliegues bajo dos enfoques:
-                        <ul>
-                          <li style="margin-top: 8px;">
-                            <strong>CI/CD:</strong> control de versiones con GitLab y creación de pipelines de despliegue con Jenkins.
-                          </li>
-                          <li>
-                            <strong>Gestión tradicional:</strong> control de versiones y baselines con Serena Dimensions.
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </article>
-
-                <article class="resume__item">
-                  <span class="resume__dot" aria-hidden="true"></span>
-
-                  <div class="resume__card">
-                    <h4 class="resume__role">
-                      Prácticas Desarrollador Full Stack
-                    </h4>
-                    <span class="resume__date">Abr 2024 - Jun 2024</span>
-                    <p class="resume__company">EVIDEN - ATOS · Madrid</p>
-                    <p class="resume__meta">
-                      Spring Boot · Angular · GitHub · Scrum · JWT · IA
-                      generativa
-                    </p>
-
-                    <ul class="resume__bullets">
-                     <li>
-                      Proyecto en equipo desarrollado con Spring Boot, Angular y MySQL, con control de versiones en GitHub. Me encargué del backend (API REST) y la lógica de la aplicación, además del diseño y la gestión de la base de datos, trabajando con un sistema de autenticación basado en JWT y Spring Security.
+                  <ul class="resume__bullets">
+                    <li>
+                      Desarrollo y mantenimiento de APIs REST con Java y Spring Boot,
+                      aplicando buenas prácticas y control de excepciones.
                     </li>
-                      <li>
-                        PoC de IA generativa: pruebas con prompts, evaluación y
-                        métricas básicas de calidad.
-                      </li>
-                    </ul>
-                  </div>
-                </article>
 
-                <article class="resume__item">
-                  <span class="resume__dot" aria-hidden="true"></span>
+                    <li>
+                      Creación y mantenimiento de consultas SQL complejas para la gestión
+                      de datos de negocio.
+                    </li>
 
-                  <div class="resume__card">
-                    <h4 class="resume__role">
-                      Prácticas Soporte Informático (CAU)
-                    </h4>
-                    <span class="resume__date">Oct 2021 - Dic 2021</span>
-                    <p class="resume__company">
-                      LÍNEA DIRECTA ASEGURADORA · Tres Cantos
-                    </p>
-                    <p class="resume__meta">IVANTI · Directorio Activo</p>
+                    <li>
+                      Soporte y administración en entornos Unix/Linux y Tomcat,
+                      incluyendo despliegues, logs y resolución de incidencias.
+                    </li>
 
-                    <ul class="resume__bullets">
-                      <li>
-                        Configuración de equipos y soporte a usuarios con IVANTI
-                        y Directorio Activo.
-                      </li>
-                    </ul>
-                  </div>
-                </article>
-              </div>
+                    <li>
+                      Uso de Git como sistema de control de versiones, siguiendo un
+                      modelo basado en GitFlow.
+                    </li>
+
+                    <li>
+                      Resolución de incidencias y nuevos desarrollos con clientes
+                      mediante Jira.
+                    </li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="resume__item">
+                <span class="resume__dot" aria-hidden="true"></span>
+
+                <div class="resume__card">
+                  <h4 class="resume__role">Desarrollador Backend Java</h4>
+                  <span class="resume__date">Oct 2024 - May 2026</span>
+                  <p class="resume__company">
+                    VILT · Línea Directa Aseguradora · Madrid
+                  </p>
+                  <p class="resume__meta">
+                    Java · Spring Boot · REST/SOAP · Oracle/DB2 · GitLab ·
+                    Jenkins Pipelines · Serena Dimensions · Postman · SoapUI ·
+                    Swagger
+                  </p>
+
+                  <ul class="resume__bullets">
+                    <li>
+                      Desarrollo y mantenimiento de APIs REST con Spring Boot
+                      (Java), control de excepciones y trazabilidad.
+                    </li>
+                    <li>
+                      Pruebas de servicios REST/SOAP con Postman y SoapUI.
+                    </li>
+                    <li>
+                      Documentación con Swagger y diagramas de flujo para
+                      mantenimiento.
+                    </li>
+                    <li>
+                      SQL en Oracle para gestión y seguimiento de datos
+                      internos y reejecución controlada de procesos.
+                    </li>
+                    <li>
+                      Integración con programas COBOL para obtener datos de
+                      negocio (DB2) y consumirlos desde servicios.
+                    </li>
+                    <li>
+                      Gestión y automatización de despliegues bajo dos enfoques:
+                      <ul>
+                        <li style="margin-top: 8px;">
+                          <strong>CI/CD:</strong> control de versiones con GitLab y creación de pipelines de despliegue
+                          con Jenkins.
+                        </li>
+                        <li>
+                          <strong>Gestión tradicional:</strong> control de versiones y baselines con Serena Dimensions.
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="resume__item">
+                <span class="resume__dot" aria-hidden="true"></span>
+
+                <div class="resume__card">
+                  <h4 class="resume__role">
+                    Prácticas Desarrollador Full Stack
+                  </h4>
+                  <span class="resume__date">Abr 2024 - Jun 2024</span>
+                  <p class="resume__company">EVIDEN - ATOS · Madrid</p>
+                  <p class="resume__meta">
+                    Spring Boot · Angular · GitHub · Scrum · JWT · IA
+                    generativa
+                  </p>
+
+                  <ul class="resume__bullets">
+                    <li>
+                      Proyecto en equipo desarrollado con Spring Boot, Angular y MySQL, con control de versiones en
+                      GitHub. Me encargué del backend (API REST) y la lógica de la aplicación, además del diseño y la
+                      gestión de la base de datos, trabajando con un sistema de autenticación basado en JWT y Spring
+                      Security.
+                    </li>
+                    <li>
+                      PoC de IA generativa: pruebas con prompts, evaluación y
+                      métricas básicas de calidad.
+                    </li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="resume__item">
+                <span class="resume__dot" aria-hidden="true"></span>
+
+                <div class="resume__card">
+                  <h4 class="resume__role">
+                    Prácticas Soporte Informático (CAU)
+                  </h4>
+                  <span class="resume__date">Oct 2021 - Dic 2021</span>
+                  <p class="resume__company">
+                    LÍNEA DIRECTA ASEGURADORA · Tres Cantos
+                  </p>
+                  <p class="resume__meta">IVANTI · Directorio Activo</p>
+
+                  <ul class="resume__bullets">
+                    <li>
+                      Configuración de equipos y soporte a usuarios con IVANTI
+                      y Directorio Activo.
+                    </li>
+                  </ul>
+                </div>
+              </article>
             </div>
+          </div>
 
-            <div id="education" class="resume__col">
-              <h3 class="resume__title">Educación</h3>
+          <div id="education" class="resume__col">
+            <h3 class="resume__title">Educación</h3>
 
-              <div class="resume__timeline">
-                <article class="resume__item">
-                  <span class="resume__dot" aria-hidden="true"></span>
+            <div class="resume__timeline">
+              <article class="resume__item">
+                <span class="resume__dot" aria-hidden="true"></span>
 
-                  <div class="resume__card">
-                    <h4 class="resume__role">
-                      Grado Superior · Desarrollo de Aplicaciones
-                      Multiplataforma
-                    </h4>
-                    <span class="resume__date">2022 - 2024</span>
-                    <p class="resume__company">
-                      IES Tetuán de las Victorias · Madrid
-                    </p>
+                <div class="resume__card">
+                  <h4 class="resume__role">
+                    Grado Superior · Desarrollo de Aplicaciones
+                    Multiplataforma
+                  </h4>
+                  <span class="resume__date">2022 - 2024</span>
+                  <p class="resume__company">
+                    IES Tetuán de las Victorias · Madrid
+                  </p>
 
-                    <ul class="resume__bullets">
-                      <li>
-                        Java + Spring Boot: APIs REST, arquitectura y buenas
-                        prácticas.
-                      </li>
-                      <li>
-                        Bases de datos relacionales (MySQL) y no relacionales
-                        (MongoDB), modelado ER y diseño lógico.
-                      </li>
-                      <li>.NET/C#: apps de escritorio y lógica de negocio.</li>
-                      <li>Android Studio: Desarrollo de aplicaciones móviles con Kotlin y Jetpack Compose.</li>
-                      <li>Concurrencia en Java: hilos y sincronización.</li>
-                      <li>Fundamentos de computación en la nube (AWS).</li>
-                    </ul>
-                  </div>
-                </article>
+                  <ul class="resume__bullets">
+                    <li>
+                      Java + Spring Boot: APIs REST, arquitectura y buenas
+                      prácticas.
+                    </li>
+                    <li>
+                      Bases de datos relacionales (MySQL) y no relacionales
+                      (MongoDB), modelado ER y diseño lógico.
+                    </li>
+                    <li>.NET/C#: apps de escritorio y lógica de negocio.</li>
+                    <li>Android Studio: Desarrollo de aplicaciones móviles con Kotlin y Jetpack Compose.</li>
+                    <li>Concurrencia en Java: hilos y sincronización.</li>
+                    <li>Fundamentos de computación en la nube (AWS).</li>
+                  </ul>
+                </div>
+              </article>
 
-                <article class="resume__item">
-                  <span class="resume__dot" aria-hidden="true"></span>
+              <article class="resume__item">
+                <span class="resume__dot" aria-hidden="true"></span>
 
-                  <div class="resume__card">
-                    <h4 class="resume__role">
-                      Grado Medio · Sistemas Microinformáticos y Redes
-                    </h4>
-                    <span class="resume__date">2019 - 2021</span>
-                    <p class="resume__company">
-                      IES Virgen de la Paz · Alcobendas
-                    </p>
+                <div class="resume__card">
+                  <h4 class="resume__role">
+                    Grado Medio · Sistemas Microinformáticos y Redes
+                  </h4>
+                  <span class="resume__date">2019 - 2021</span>
+                  <p class="resume__company">
+                    IES Virgen de la Paz · Alcobendas
+                  </p>
 
-                    <ul class="resume__bullets">
-                      <li>
-                        Redes: direccionamiento IP, subredes y configuración de
-                        equipos.
-                      </li>
-                      <li>Servicios: DNS/DHCP y resolución de nombres.</li>
-                      <li>Conectividad: TCP/IP, NAT, routing básico.</li>
-                      <li>Hardware y sistemas: montaje y diagnóstico.</li>
-                    </ul>
-                  </div>
-                </article>
-              </div>
+                  <ul class="resume__bullets">
+                    <li>
+                      Redes: direccionamiento IP, subredes y configuración de
+                      equipos.
+                    </li>
+                    <li>Servicios: DNS/DHCP y resolución de nombres.</li>
+                    <li>Conectividad: TCP/IP, NAT, routing básico.</li>
+                    <li>Hardware y sistemas: montaje y diagnóstico.</li>
+                  </ul>
+                </div>
+              </article>
             </div>
           </div>
         </div>
-      </section>
-      <!-- FIN RESUME -->
+      </div>
+    </section>
+    <!-- FIN RESUME -->
 
-      <!-- INICIO CERTIFICATES -->
-      <section id="certs" class="section section--alt">
-        <div class="container">
-          <div class="section__head">
-            <h2>Certificados</h2>
-            <p>AEPI (Madrid).</p>
-          </div>
+    <!-- INICIO CERTIFICATES -->
+    <section id="certs" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2>Certificados</h2>
+          <p>AEPI (Madrid).</p>
+        </div>
 
-          <div class="list">
-            <article class="list__item">
-              <div>
-                <h3>Spring Framework y Spring Boot</h3>
-                <p class="muted">Abr - Jun 2022</p>
-              </div>
-              <a
-                class="btn btn--small"
-                href="assets/Diploma%20-%20Spring%20Boot%20-%20Manuel%20Sanz%20Romero.pdf"
-                target="_blank"
-                rel="noopener"
-                >Ver diploma</a
-              >
-            </article>
-            <article class="list__item">
-              <div>
-                <h3>Analista Java de Aplicaciones Empresariales</h3>
-                <p class="muted">Ene - Mar 2022</p>
-              </div>
-              <a
-                class="btn btn--small"
-                href="assets/Diploma%20-%20Analista%20Java%20-%20Manuel%20Sanz%20Romero.pdf"
-                target="_blank"
-                rel="noopener"
-                >Ver diploma</a
-              >
-            </article>
+        <div class="list">
+          <article class="list__item">
+            <div>
+              <h3>Programación con agentes</h3>
+              <p class="muted">Desarrollo con IA · 2026</p>
+            </div>
+            <a class="btn btn--small" href="assets/Diploma%20-%20Desarrollo%20con%20IA%20-%20Manuel%20Sanz%20Romero.pdf"
+              target="_blank" rel="noopener">Ver diploma</a>
+          </article>
+          <article class="list__item">
+            <div>
+              <h3>Spring Framework y Spring Boot</h3>
+              <p class="muted">Abr - Jun 2022</p>
+            </div>
+            <a class="btn btn--small" href="assets/Diploma%20-%20Spring%20Boot%20-%20Manuel%20Sanz%20Romero.pdf"
+              target="_blank" rel="noopener">Ver diploma</a>
+          </article>
+          <article class="list__item">
+            <div>
+              <h3>Analista Java de Aplicaciones Empresariales</h3>
+              <p class="muted">Ene - Mar 2022</p>
+            </div>
+            <a class="btn btn--small" href="assets/Diploma%20-%20Analista%20Java%20-%20Manuel%20Sanz%20Romero.pdf"
+              target="_blank" rel="noopener">Ver diploma</a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- FIN CERTIFICATES -->
+
+    <!-- INICIO PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Proyectos</h2>
+          <div class="projects__filters" aria-label="Filtros de proyectos">
+            <button class="projects__filter is-active" type="button" data-filter="all">
+              Todos
+            </button>
+            <button class="projects__filter" type="button" data-filter="profesional">
+              Profesionales
+            </button>
+            <button class="projects__filter" type="button" data-filter="personal">
+              Personales
+            </button>
           </div>
         </div>
-      </section>
-      <!-- FIN CERTIFICATES -->
 
-      <!-- INICIO PROJECTS -->
-      <section id="projects" class="section">
-        <div class="container">
-          <div class="section__head">
-            <h2>Proyectos</h2>
-            <div class="projects__filters" aria-label="Filtros de proyectos">
-              <button
-                class="projects__filter is-active"
-                type="button"
-                data-filter="all"
-              >
-                Todos
-              </button>
-              <button
-                class="projects__filter"
-                type="button"
-                data-filter="profesional"
-              >
-                Profesionales
-              </button>
-              <button
-                class="projects__filter"
-                type="button"
-                data-filter="personal"
-              >
-                Personales
-              </button>
+        <div class="projects" id="projectsGrid">
+          <article class="project" data-type="personal">
+            <div class="project__thumb project__thumb--full">
+              <img class="project__thumb-img project__thumb-img--tall" src="assets/midespensa_miniatura.png"
+                alt="Miniatura del proyecto MiDespensa" loading="lazy" />
             </div>
-          </div>
-
-          <div class="projects" id="projectsGrid">
-            <article class="project" data-type="personal">
-              <div class="project__thumb project__thumb--full">
-                <img
-                  class="project__thumb-img project__thumb-img--tall"
-                  src="assets/midespensa_miniatura.png"
-                  alt="Miniatura del proyecto MiDespensa"
-                  loading="lazy"
-                />
+            <div class="project__body">
+              <h3>MiDespensa</h3>
+              <p>App web y móvil para gestionar el inventario del hogar. Sincroniza stock en tiempo real entre
+                familiares, controla fechas de caducidad en múltiples ubicaciones y genera listas de la compra al
+                instante.</p>
+              <div class="tags">
+                <span class="tag"><i class="devicon-ionic-original" aria-hidden="true"></i>Ionic</span>
+                <span class="tag"><i class="devicon-vuejs-plain" aria-hidden="true"></i>Vue</span>
+                <span class="tag"><i class="devicon-typescript-plain" aria-hidden="true"></i>TypeScript</span>
+                <span class="tag"><i class="devicon-firebase-plain" aria-hidden="true"></i>Firebase</span>
               </div>
-              <div class="project__body">
-                <h3>MiDespensa</h3>
-                <p>App web y móvil para gestionar el inventario del hogar. Sincroniza stock en tiempo real entre familiares, controla fechas de caducidad en múltiples ubicaciones y genera listas de la compra al instante.</p>
-                <div class="tags">
-                  <span class="tag"
-                    ><i class="devicon-ionic-original" aria-hidden="true"></i
-                    >Ionic</span
-                  >
-                  <span class="tag"
-                    ><i class="devicon-vuejs-plain" aria-hidden="true"></i
-                    >Vue</span
-                  >
-                  <span class="tag"
-                    ><i class="devicon-typescript-plain" aria-hidden="true"></i
-                    >TypeScript</span
-                  >
-                  <span class="tag"
-                    ><i class="devicon-firebase-plain" aria-hidden="true"></i
-                    >Firebase</span
-                  >
-                </div>
-                <div class="project__links">
-                  <a
-                    class="btn btn--small btn--primary"
-                    href="https://midespensaweb.netlify.app/"
-                    target="_blank"
-                    rel="noopener"
-                    >Más info</a
-                  >
-                  <a
-                    class="btn btn--small"
-                    href="https://github.com/Sanz-rm/MiDespensa"
-                    target="_blank"
-                    rel="noopener"
-                    >Código</a
-                  >
-                </div>
+              <div class="project__links">
+                <a class="btn btn--small btn--primary" href="https://midespensaweb.netlify.app/" target="_blank"
+                  rel="noopener">Más info</a>
+                <a class="btn btn--small" href="https://github.com/Sanz-rm/MiDespensa" target="_blank"
+                  rel="noopener">Código</a>
               </div>
-            </article>
-
-            <article class="project" data-type="profesional">
-              <div class="project__thumb project__thumb--full">
-                <img
-                  class="project__thumb-img project__thumb-img--tall"
-                  src="assets/controlpresencia_miniatura.png"
-                  alt="Miniatura del proyecto ControlPresencia"
-                  loading="lazy"
-                />
-              </div>
-              <div class="project__body">
-                <h3>ControlPresencia</h3>
-                <p>Sistema de gestión laboral para el registro centralizado de jornadas. Facilita la administración de empleados, el control de horas anuales y la generación automática de informes en PDF.</p>
-                <div class="tags">
-                  <span class="tag"
-                    ><i class="devicon-dotnetcore-plain" aria-hidden="true"></i
-                    >.NET</span
-                  >
-                  <span class="tag"
-                    ><i class="devicon-csharp-plain" aria-hidden="true"></i
-                    >C#</span
-                  >
-                  <span class="tag"
-                    ><i class="devicon-mysql-plain" aria-hidden="true"></i
-                    >MySQL</span
-                  >
-                </div>
-                <div class="project__links">
-                  <a
-                    class="btn btn--small btn--primary"
-                    href="https://controlpresenciaweb.netlify.app/"
-                    target="_blank"
-                    rel="noopener"
-                    >Más info</a
-                  >
-                  <a
-                    class="btn btn--small"
-                    href="https://github.com/Sanz-rm/ControlPresencia"
-                    target="_blank"
-                    rel="noopener"
-                    >Código</a
-                  >
-                </div>
-              </div>
-            </article>
-
-            <article class="project" data-type="profesional">
-              <div class="project__thumb project__thumb--full">
-                <img
-                  class="project__thumb-img project__thumb-img--tall"
-                  src="assets/myprotask_miniatura.png"
-                  alt="Miniatura del proyecto MyProTask"
-                  loading="lazy"
-                />
-              </div>
-              <div class="project__body">
-                <h3>MyProTask</h3>
-                <p>Plataforma para la organización de equipos y proyectos mediante tableros Kanban. Conecta eficientemente el talento de los empleados con los proyectos idóneos según sus perfiles y habilidades.</p>
-                <div class="tags">
-                  <span class="tag"
-                    ><i class="devicon-spring-plain" aria-hidden="true"></i
-                    >Spring Boot</span
-                  >
-                  <span class="tag"
-                    ><i class="devicon-angularjs-plain" aria-hidden="true"></i
-                    >Angular</span
-                  >
-                  <span class="tag"
-                    ><i class="bi bi-shield-lock" aria-hidden="true"></i
-                    >JWT</span
-                  >
-                  <span class="tag"
-                    ><i class="devicon-mysql-plain" aria-hidden="true"></i
-                    >MySQL</span
-                  >
-                </div>
-                <div class="project__links">
-                  <a
-                    class="btn btn--small btn--primary"
-                    href="https://myprotaskweb.netlify.app/"
-                    target="_blank"
-                    rel="noopener"
-                    >Más info</a
-                  >
-                  <a
-                    class="btn btn--small"
-                    href="https://github.com/Sanz-rm/MyProTask"
-                    target="_blank"
-                    rel="noopener"
-                    >Código</a
-                  >
-                </div>
-              </div>
-            </article>
-
-            <article class="project" data-type="profesional">
-              <div class="project__thumb project__thumb--full">
-                <img
-                  class="project__thumb-img project__thumb-img--tall"
-                  src="assets/projectmaster_miniatura.png"
-                  alt="Miniatura del proyecto ProjectMaster"
-                  loading="lazy"
-                />
-              </div>
-              <div class="project__body">
-                <h3>ProjectMaster</h3>
-                <p>App de escritorio para la coordinación de equipos y seguimiento de progreso. Centraliza la gestión de tareas con fechas límite y prioridades, e incorpora un sistema de chat y notificaciones en tiempo real.</p>
-                <div class="tags">
-                  <span class="tag"
-                    ><i class="devicon-dotnetcore-plain" aria-hidden="true"></i
-                    >.NET</span
-                  >
-                  <span class="tag"
-                    ><i class="devicon-csharp-plain" aria-hidden="true"></i
-                    >C#</span
-                  >
-                  <span class="tag"
-                    ><i class="devicon-mysql-plain" aria-hidden="true"></i
-                    >MySQL</span
-                  >
-                  <span class="tag"
-                    ><i class="bi bi-cpu" aria-hidden="true"></i>Hilos</span
-                  >
-                </div>
-                <div class="project__links">
-                  <a
-                    class="btn btn--small btn--primary"
-                    href="https://projectmasterweb.netlify.app/"
-                    target="_blank"
-                    rel="noopener"
-                    >Más info</a
-                  >
-                  <a
-                    class="btn btn--small"
-                    href="https://github.com/Sanz-rm/ProjectMaster"
-                    target="_blank"
-                    rel="noopener"
-                    >Código</a
-                  >
-                </div>
-              </div>
-            </article>
-
-            <article class="project" data-type="profesional">
-              <div class="project__thumb project__thumb--full">
-                <img
-                  class="project__thumb-img project__thumb-img--tall"
-                  src="assets/pdffusion_miniatura.png"
-                  alt="Miniatura del proyecto PDFFusion"
-                  loading="lazy"
-                />
-              </div>
-              <div class="project__body">
-                <h3>PDFFusion</h3>
-                <p>Herramienta de escritorio ágil e intuitiva que permite seleccionar, ordenar y fusionar múltiples documentos PDF e imágenes en un único archivo.</p>
-                <div class="tags">
-                  <span class="tag"
-                    ><i class="devicon-dotnetcore-plain" aria-hidden="true"></i
-                    >.NET</span
-                  >
-                  <span class="tag"
-                    ><i class="devicon-csharp-plain" aria-hidden="true"></i
-                    >C#</span
-                  >
-                  <span class="tag"
-                    ><i class="bi bi-filetype-pdf" aria-hidden="true"></i
-                    >PDF</span
-                  >
-                </div>
-                <div class="project__links">
-                  <a
-                    class="btn btn--small btn--primary"
-                    href="https://pdffusionweb.netlify.app/"
-                    target="_blank"
-                    rel="noopener"
-                    >Más info</a
-                  >
-                  <a
-                    class="btn btn--small"
-                    href="https://github.com/Sanz-rm/PDFFusion/tree/main"
-                    target="_blank"
-                    rel="noopener"
-                    >Código</a
-                  >
-                </div>
-              </div>
-            </article>
-
-            <article class="project" data-type="personal">
-              <div class="project__thumb project__thumb--full">
-                <img
-                  class="project__thumb-img project__thumb-img--tall"
-                  src="assets/votafms_miniatura.png"
-                  alt="Miniatura del proyecto VotaFMS"
-                  loading="lazy"
-                />
-              </div>
-              <div class="project__body">
-                <h3>VotaFMS</h3>
-                <p>Aplicación multiplataforma (Web y Android) para puntuar batallas de rap con el formato oficial FMS. Automatiza el cálculo de resultados y mantiene un ranking actualizado con estadísticas por MC.</p>
-                <div class="tags">
-                  <span class="tag"
-                    ><i class="devicon-spring-plain" aria-hidden="true"></i
-                    >Spring Boot</span
-                  >
-                  <span class="tag"
-                    ><i class="devicon-angularjs-plain" aria-hidden="true"></i
-                    >Angular</span
-                  >
-                  <span class="tag"
-                    ><i class="bi bi-shield-lock" aria-hidden="true"></i
-                    >JWT</span
-                  >
-                  <span class="tag"
-                    ><i class="devicon-mysql-plain" aria-hidden="true"></i
-                    >MySQL</span
-                  >
-                </div>
-                <div class="project__links">
-                  <a
-                    class="btn btn--small btn--primary"
-                    href="https://votafmsweb.netlify.app/"
-                    target="_blank"
-                    rel="noopener"
-                    >Más info</a
-                  >
-                  <a
-                    class="btn btn--small"
-                    href="https://github.com/Sanz-rm/VotaFMS"
-                    target="_blank"
-                    rel="noopener"
-                    >Código</a
-                  >
-                </div>
-              </div>
-            </article>
-
-            <article class="project" data-type="profesional">
-              <div class="project__thumb project__thumb--full">
-                <img
-                  class="project__thumb-img project__thumb-img--tall"
-                  src="assets/m&l_inmobiliaria_miniatura.png"
-                  alt="Miniatura del proyecto M&L Inmobiliaria"
-                  loading="lazy"
-                />
-              </div>
-              <div class="project__body">
-                <h3>M&L Inmobiliaria</h3>
-                <p>Sitio web corporativo desarrollado a medida para una agencia inmobiliaria real de Valencia. Diseño profesional y optimizado para la exposición del catálogo de propiedades usando Shopify.</p>
-                <div class="tags">
-                  <span class="tag"
-                    ><i class="bi bi-bag" aria-hidden="true"></i>Shopify</span
-                  >
-                  <span class="tag"
-                    ><i class="bi bi-code-square" aria-hidden="true"></i
-                    >Liquid</span
-                  >
-                </div>
-                <div class="project__links">
-                  <a
-                    class="btn btn--small btn--primary"
-                    href="https://mlinmobiliaria.es/?srsltid=AfmBOooGpbH3-GfoPD4v_df41bLBZQdNn2GZjFMasrUMCQVj0whVt_lQ"
-                    target="_blank"
-                    rel="noopener"
-                    >Más info</a
-                  >
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-      <!-- FIN PROJECTS -->
-
-      <!-- INICIO SKILLS -->
-      <section id="skills" class="section section--alt">
-        <div class="container">
-          <div class="section__head">
-            <h2>Stack técnico</h2>
-            <p>Especializado en backend, con sólidos conocimientos de frontend.</p>
-          </div>
-
-          <div class="stack__grid">
-            <article class="stack">
-              <div class="stack__head">
-                <i class="bi bi-hdd-network" aria-hidden="true"></i>
-                <h3>Backend</h3>
-              </div>
-              <div class="stack__pills">
-                <span class="tag"
-                  ><i class="devicon-java-plain" aria-hidden="true"></i
-                  >Java</span
-                >
-                <span class="tag"
-                  ><i class="devicon-spring-plain" aria-hidden="true"></i>Spring
-                  Boot</span
-                >
-                <span class="tag"
-                  ><i class="bi bi-braces" aria-hidden="true"></i>REST</span
-                >
-                <span class="tag"
-                  ><i class="bi bi-diagram-3" aria-hidden="true"></i>SOAP</span
-                >
-                <span class="tag"
-                  ><i class="bi bi-boxes" aria-hidden="true"></i
-                  >Microservicios</span
-                >
-                <span class="tag"
-                  ><i class="bi bi-shield-lock" aria-hidden="true"></i>JWT</span
-                >
-                <span class="tag"
-                  ><i class="devicon-csharp-plain" aria-hidden="true"></i
-                  >C#</span
-                >
-                <span class="tag"
-                  ><i class="devicon-dotnetcore-plain" aria-hidden="true"></i
-                  >.NET</span
-                >
-                <span class="tag"
-                  ><i class="devicon-nodejs-plain" aria-hidden="true"></i
-                  >Node.js</span
-                >
-              </div>
-            </article>
-
-            <article class="stack">
-              <div class="stack__head">
-                <i class="bi bi-window" aria-hidden="true"></i>
-                <h3>Frontend</h3>
-              </div>
-              <div class="stack__pills">
-                <span class="tag"
-                  ><i class="devicon-angularjs-plain" aria-hidden="true"></i
-                  >Angular</span
-                >
-                <span class="tag"
-                  ><i class="devicon-vuejs-plain" aria-hidden="true"></i
-                  >Vue</span
-                >
-                <span class="tag"
-                  ><i class="devicon-ionic-original" aria-hidden="true"></i
-                  >Ionic</span
-                >
-                <span class="tag"
-                  ><i class="devicon-bootstrap-plain" aria-hidden="true"></i
-                  >Bootstrap</span
-                >
-                <span class="tag"
-                  ><i class="devicon-typescript-plain" aria-hidden="true"></i
-                  >TypeScript</span
-                >
-                <span class="tag"
-                  ><i class="devicon-javascript-plain" aria-hidden="true"></i
-                  >JavaScript</span
-                >
-                <span class="tag"
-                  ><i class="devicon-html5-plain" aria-hidden="true"></i
-                  >HTML</span
-                >
-                <span class="tag"
-                  ><i class="devicon-css3-plain" aria-hidden="true"></i
-                  >CSS</span
-                >
-              </div>
-            </article>
-
-            <article class="stack">
-              <div class="stack__head">
-                <i class="bi bi-tools" aria-hidden="true"></i>
-                <h3>DevOps & Tools</h3>
-              </div>
-              <div class="stack__pills">
-                <span class="tag"
-                  ><i class="devicon-git-plain" aria-hidden="true"></i>Git</span
-                >
-                <span class="tag"
-                  ><i class="bi bi-diagram-3" aria-hidden="true"></i>Serena
-                  Dimensions</span
-                >
-                <span class="tag"
-                  ><i class="devicon-jenkins-plain" aria-hidden="true"></i
-                  >Jenkins</span
-                >
-                <span class="tag"
-                  ><i class="bi bi-send" aria-hidden="true"></i>Postman</span
-                >
-                <span class="tag"
-                  ><i class="bi bi-plug" aria-hidden="true"></i>SoapUI</span
-                >
-                <span class="tag"
-                  ><i class="bi bi-file-earmark-code" aria-hidden="true"></i
-                  >Swagger</span
-                >
-                <span class="tag"
-                  ><i class="devicon-mysql-plain" aria-hidden="true"></i
-                  >MySQL</span
-                >
-                <span class="tag"
-                  ><i class="bi bi-database" aria-hidden="true"></i>Oracle</span
-                >
-                <span class="tag"
-                  ><i class="bi bi-graph-up" aria-hidden="true"></i>Kibana</span
-                >
-                <span class="tag"
-                  ><i class="devicon-firebase-plain" aria-hidden="true"></i
-                  >Firebase</span
-                >
-              </div>
-            </article>
-          </div>
-
-          <article class="card card--wide stack__soft">
-            <div class="card__head-inline">
-              <i class="bi bi-person-workspace" aria-hidden="true"></i>
-              <h3>Soft Skills</h3>
             </div>
-            <p>Mi objetivo es desarrollar código robusto y escalable sin perder de vista la visión global del producto y las necesidades del negocio. Creo firmemente que la mejor tecnología se construye apoyándose en un buen trabajo en equipo, proactividad y una comunicación fluida.</p>
-            <div class="tags tags--soft">
-              <span class="tag"><i class="bi bi-people" aria-hidden="true"></i>Trabajo en equipo</span>
-              <span class="tag"><i class="bi bi-puzzle" aria-hidden="true"></i>Resolución de problemas</span>
-              <span class="tag"><i class="bi bi-lightning-charge" aria-hidden="true"></i>Proactividad</span>
-              <span class="tag"><i class="bi bi-chat-dots" aria-hidden="true"></i>Comunicación efectiva</span>
-              <span class="tag"><i class="bi bi-journal-arrow-up" aria-hidden="true"></i>Aprendizaje continuo</span>
+          </article>
+
+          <article class="project" data-type="profesional">
+            <div class="project__thumb project__thumb--full">
+              <img class="project__thumb-img project__thumb-img--tall" src="assets/controlpresencia_miniatura.png"
+                alt="Miniatura del proyecto ControlPresencia" loading="lazy" />
+            </div>
+            <div class="project__body">
+              <h3>ControlPresencia</h3>
+              <p>Sistema de gestión laboral para el registro centralizado de jornadas. Facilita la administración de
+                empleados, el control de horas anuales y la generación automática de informes en PDF.</p>
+              <div class="tags">
+                <span class="tag"><i class="devicon-dotnetcore-plain" aria-hidden="true"></i>.NET</span>
+                <span class="tag"><i class="devicon-csharp-plain" aria-hidden="true"></i>C#</span>
+                <span class="tag"><i class="devicon-mysql-plain" aria-hidden="true"></i>MySQL</span>
+              </div>
+              <div class="project__links">
+                <a class="btn btn--small btn--primary" href="https://controlpresenciaweb.netlify.app/" target="_blank"
+                  rel="noopener">Más info</a>
+                <a class="btn btn--small" href="https://github.com/Sanz-rm/ControlPresencia" target="_blank"
+                  rel="noopener">Código</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" data-type="profesional">
+            <div class="project__thumb project__thumb--full">
+              <img class="project__thumb-img project__thumb-img--tall" src="assets/myprotask_miniatura.png"
+                alt="Miniatura del proyecto MyProTask" loading="lazy" />
+            </div>
+            <div class="project__body">
+              <h3>MyProTask</h3>
+              <p>Plataforma para la organización de equipos y proyectos mediante tableros Kanban. Conecta eficientemente
+                el talento de los empleados con los proyectos idóneos según sus perfiles y habilidades.</p>
+              <div class="tags">
+                <span class="tag"><i class="devicon-spring-plain" aria-hidden="true"></i>Spring Boot</span>
+                <span class="tag"><i class="devicon-angularjs-plain" aria-hidden="true"></i>Angular</span>
+                <span class="tag"><i class="bi bi-shield-lock" aria-hidden="true"></i>JWT</span>
+                <span class="tag"><i class="devicon-mysql-plain" aria-hidden="true"></i>MySQL</span>
+              </div>
+              <div class="project__links">
+                <a class="btn btn--small btn--primary" href="https://myprotaskweb.netlify.app/" target="_blank"
+                  rel="noopener">Más info</a>
+                <a class="btn btn--small" href="https://github.com/Sanz-rm/MyProTask" target="_blank"
+                  rel="noopener">Código</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" data-type="profesional">
+            <div class="project__thumb project__thumb--full">
+              <img class="project__thumb-img project__thumb-img--tall" src="assets/projectmaster_miniatura.png"
+                alt="Miniatura del proyecto ProjectMaster" loading="lazy" />
+            </div>
+            <div class="project__body">
+              <h3>ProjectMaster</h3>
+              <p>App de escritorio para la coordinación de equipos y seguimiento de progreso. Centraliza la gestión de
+                tareas con fechas límite y prioridades, e incorpora un sistema de chat y notificaciones en tiempo real.
+              </p>
+              <div class="tags">
+                <span class="tag"><i class="devicon-dotnetcore-plain" aria-hidden="true"></i>.NET</span>
+                <span class="tag"><i class="devicon-csharp-plain" aria-hidden="true"></i>C#</span>
+                <span class="tag"><i class="devicon-mysql-plain" aria-hidden="true"></i>MySQL</span>
+                <span class="tag"><i class="bi bi-cpu" aria-hidden="true"></i>Hilos</span>
+              </div>
+              <div class="project__links">
+                <a class="btn btn--small btn--primary" href="https://projectmasterweb.netlify.app/" target="_blank"
+                  rel="noopener">Más info</a>
+                <a class="btn btn--small" href="https://github.com/Sanz-rm/ProjectMaster" target="_blank"
+                  rel="noopener">Código</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" data-type="profesional">
+            <div class="project__thumb project__thumb--full">
+              <img class="project__thumb-img project__thumb-img--tall" src="assets/pdffusion_miniatura.png"
+                alt="Miniatura del proyecto PDFFusion" loading="lazy" />
+            </div>
+            <div class="project__body">
+              <h3>PDFFusion</h3>
+              <p>Herramienta de escritorio ágil e intuitiva que permite seleccionar, ordenar y fusionar múltiples
+                documentos PDF e imágenes en un único archivo.</p>
+              <div class="tags">
+                <span class="tag"><i class="devicon-dotnetcore-plain" aria-hidden="true"></i>.NET</span>
+                <span class="tag"><i class="devicon-csharp-plain" aria-hidden="true"></i>C#</span>
+                <span class="tag"><i class="bi bi-filetype-pdf" aria-hidden="true"></i>PDF</span>
+              </div>
+              <div class="project__links">
+                <a class="btn btn--small btn--primary" href="https://pdffusionweb.netlify.app/" target="_blank"
+                  rel="noopener">Más info</a>
+                <a class="btn btn--small" href="https://github.com/Sanz-rm/PDFFusion/tree/main" target="_blank"
+                  rel="noopener">Código</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" data-type="personal">
+            <div class="project__thumb project__thumb--full">
+              <img class="project__thumb-img project__thumb-img--tall" src="assets/votafms_miniatura.png"
+                alt="Miniatura del proyecto VotaFMS" loading="lazy" />
+            </div>
+            <div class="project__body">
+              <h3>VotaFMS</h3>
+              <p>Aplicación multiplataforma (Web y Android) para puntuar batallas de rap con el formato oficial FMS.
+                Automatiza el cálculo de resultados y mantiene un ranking actualizado con estadísticas por MC.</p>
+              <div class="tags">
+                <span class="tag"><i class="devicon-spring-plain" aria-hidden="true"></i>Spring Boot</span>
+                <span class="tag"><i class="devicon-angularjs-plain" aria-hidden="true"></i>Angular</span>
+                <span class="tag"><i class="bi bi-shield-lock" aria-hidden="true"></i>JWT</span>
+                <span class="tag"><i class="devicon-mysql-plain" aria-hidden="true"></i>MySQL</span>
+              </div>
+              <div class="project__links">
+                <a class="btn btn--small btn--primary" href="https://votafmsweb.netlify.app/" target="_blank"
+                  rel="noopener">Más info</a>
+                <a class="btn btn--small" href="https://github.com/Sanz-rm/VotaFMS" target="_blank"
+                  rel="noopener">Código</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" data-type="profesional">
+            <div class="project__thumb project__thumb--full">
+              <img class="project__thumb-img project__thumb-img--tall" src="assets/m&l_inmobiliaria_miniatura.png"
+                alt="Miniatura del proyecto M&L Inmobiliaria" loading="lazy" />
+            </div>
+            <div class="project__body">
+              <h3>M&L Inmobiliaria</h3>
+              <p>Sitio web corporativo desarrollado a medida para una agencia inmobiliaria real de Valencia. Diseño
+                profesional y optimizado para la exposición del catálogo de propiedades usando Shopify.</p>
+              <div class="tags">
+                <span class="tag"><i class="bi bi-bag" aria-hidden="true"></i>Shopify</span>
+                <span class="tag"><i class="bi bi-code-square" aria-hidden="true"></i>Liquid</span>
+              </div>
+              <div class="project__links">
+                <a class="btn btn--small btn--primary"
+                  href="https://mlinmobiliaria.es/?srsltid=AfmBOooGpbH3-GfoPD4v_df41bLBZQdNn2GZjFMasrUMCQVj0whVt_lQ"
+                  target="_blank" rel="noopener">Más info</a>
+              </div>
             </div>
           </article>
         </div>
-      </section>
-      <!-- FIN SKILLS -->
-
-      <!-- INICIO CONTACT -->
-      <section id="contact" class="section">
-        <div class="container">
-          <div class="section__head">
-            <h2>Contacto</h2>
-          </div>
-
-          <div class="contact">
-            <div class="contact__card">
-              <h3>Hablemos</h3>
-              <div class="contact__links">
-                <a class="contact__link" href="mailto:sanzromerom@gmail.com"
-                  >sanzromerom@gmail.com</a
-                >
-                <a class="contact__link" href="tel:+34634567340"
-                  >+34 634 567 340</a
-                >
-                <a
-                  class="contact__link"
-                  href="https://www.linkedin.com/in/manuel-sanz-romero-6a8797320/"
-                  target="_blank"
-                  rel="noopener"
-                  >LinkedIn</a
-                >
-                <a
-                  class="contact__link"
-                  href="https://github.com/Sanz-rm"
-                  target="_blank"
-                  rel="noopener"
-                  >GitHub</a
-                >
-                <a
-                  class="contact__link"
-                  href="https://www.youtube.com/@SanzDev17"
-                  target="_blank"
-                  rel="noopener"
-                  >YouTube</a
-                >
-              </div>
-            </div>
-
-            <form class="form" action="#" method="post">
-              <label>
-                Nombre
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Tu nombre"
-                  required
-                />
-              </label>
-
-              <label>
-                Email
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="tu@email.com"
-                  required
-                />
-              </label>
-
-              <label>
-                Mensaje
-                <textarea
-                  name="message"
-                  rows="5"
-                  placeholder="Cuéntame en qué puedo ayudarte"
-                  required
-                ></textarea>
-              </label>
-
-              <button class="btn btn--primary" type="submit">Enviar</button>
-            </form>
-          </div>
-        </div>
-      </section>
-      <!-- FIN CONTACT -->
-    </main>
-
-    <!-- INICIO FOOTER -->
-    <footer class="footer">
-      <div class="container footer__inner">
-        <p>© <span id="year"></span> Manuel Sanz Romero · Portafolio</p>
-        <p class="muted">
-          Backend Developer · San Sebastián de los Reyes, Madrid
-        </p>
       </div>
-    </footer>
-    <!-- FIN FOOTER -->
+    </section>
+    <!-- FIN PROJECTS -->
 
-    <a href="#top" class="to-top" id="toTop" aria-label="Volver arriba">
-      <i class="bi bi-arrow-up"></i>
-    </a>
+    <!-- INICIO SKILLS -->
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2>Stack técnico</h2>
+          <p>Especializado en backend, con sólidos conocimientos de frontend.</p>
+        </div>
 
-    <!-- CONEXION EMAILJS -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <div class="stack__grid">
+          <article class="stack">
+            <div class="stack__head">
+              <i class="bi bi-hdd-network" aria-hidden="true"></i>
+              <h3>Backend</h3>
+            </div>
+            <div class="stack__pills">
+              <span class="tag"><i class="devicon-java-plain" aria-hidden="true"></i>Java</span>
+              <span class="tag"><i class="devicon-spring-plain" aria-hidden="true"></i>Spring
+                Boot</span>
+              <span class="tag"><i class="bi bi-braces" aria-hidden="true"></i>REST</span>
+              <span class="tag"><i class="bi bi-diagram-3" aria-hidden="true"></i>SOAP</span>
+              <span class="tag"><i class="bi bi-boxes" aria-hidden="true"></i>Microservicios</span>
+              <span class="tag"><i class="bi bi-shield-lock" aria-hidden="true"></i>JWT</span>
+              <span class="tag"><i class="devicon-csharp-plain" aria-hidden="true"></i>C#</span>
+              <span class="tag"><i class="devicon-dotnetcore-plain" aria-hidden="true"></i>.NET</span>
+              <span class="tag"><i class="devicon-nodejs-plain" aria-hidden="true"></i>Node.js</span>
+              <span class="tag"><i class="bi bi-code-square" aria-hidden="true"></i>COBOL</span>
+            </div>
+          </article>
 
-    <!-- INICIO SCRIPT -->
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
+          <article class="stack">
+            <div class="stack__head">
+              <i class="bi bi-window" aria-hidden="true"></i>
+              <h3>Frontend</h3>
+            </div>
+            <div class="stack__pills">
+              <span class="tag"><i class="devicon-angularjs-plain" aria-hidden="true"></i>Angular</span>
+              <span class="tag"><i class="devicon-vuejs-plain" aria-hidden="true"></i>Vue</span>
+              <span class="tag"><i class="devicon-ionic-original" aria-hidden="true"></i>Ionic</span>
+              <span class="tag"><i class="devicon-bootstrap-plain" aria-hidden="true"></i>Bootstrap</span>
+              <span class="tag"><i class="devicon-typescript-plain" aria-hidden="true"></i>TypeScript</span>
+              <span class="tag"><i class="devicon-javascript-plain" aria-hidden="true"></i>JavaScript</span>
+              <span class="tag"><i class="devicon-html5-plain" aria-hidden="true"></i>HTML</span>
+              <span class="tag"><i class="devicon-css3-plain" aria-hidden="true"></i>CSS</span>
+            </div>
+          </article>
 
-      // INICIO EFECTO ESCRITURA
-      const roles = ["Backend", "Frontend", "Full Stack"];
-      const typingEl = document.getElementById("typing");
+          <article class="stack">
+            <div class="stack__head">
+              <i class="bi bi-tools" aria-hidden="true"></i>
+              <h3>DevOps & Tools</h3>
+            </div>
+            <div class="stack__pills">
+              <span class="tag"><i class="devicon-git-plain" aria-hidden="true"></i>Git</span>
+              <span class="tag"><i class="bi bi-diagram-3" aria-hidden="true"></i>GitFlow</span>
+              <span class="tag"><i class="devicon-jenkins-plain" aria-hidden="true"></i>Jenkins</span>
+              <span class="tag"><i class="bi bi-send" aria-hidden="true"></i>Postman</span>
+              <span class="tag"><i class="bi bi-plug" aria-hidden="true"></i>SoapUI</span>
+              <span class="tag"><i class="bi bi-file-earmark-code" aria-hidden="true"></i>Swagger</span>
+              <span class="tag"><i class="devicon-mysql-plain" aria-hidden="true"></i>MySQL</span>
+              <span class="tag"><i class="bi bi-database" aria-hidden="true"></i>Oracle</span>
+              <span class="tag"><i class="bi bi-graph-up" aria-hidden="true"></i>Kibana</span>
+              <span class="tag"><i class="devicon-firebase-plain" aria-hidden="true"></i>Firebase</span>
+              <span class="tag"><i class="bi bi-ubuntu" aria-hidden="true"></i>Unix/Linux</span>
+              <span class="tag"><i class="bi bi-box-seam" aria-hidden="true"></i>Tomcat</span>
+            </div>
+          </article>
+        </div>
 
-      let roleIndex = 0;
-      let charIndex = 0;
-      let deleting = false;
+        <article class="card card--wide stack__soft">
+          <div class="card__head-inline">
+            <i class="bi bi-person-workspace" aria-hidden="true"></i>
+            <h3>Soft Skills</h3>
+          </div>
+          <p>Mi objetivo es desarrollar código robusto y escalable sin perder de vista la visión global del producto y
+            las necesidades del negocio. Creo firmemente que la mejor tecnología se construye apoyándose en un buen
+            trabajo en equipo, proactividad y una comunicación fluida.</p>
+          <div class="tags tags--soft">
+            <span class="tag"><i class="bi bi-people" aria-hidden="true"></i>Trabajo en equipo</span>
+            <span class="tag"><i class="bi bi-puzzle" aria-hidden="true"></i>Resolución de problemas</span>
+            <span class="tag"><i class="bi bi-lightning-charge" aria-hidden="true"></i>Proactividad</span>
+            <span class="tag"><i class="bi bi-chat-dots" aria-hidden="true"></i>Comunicación efectiva</span>
+            <span class="tag"><i class="bi bi-journal-arrow-up" aria-hidden="true"></i>Aprendizaje continuo</span>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- FIN SKILLS -->
 
-      const SPEED_TYPE = 110;
-      const SPEED_DELETE = 70;
-      const PAUSE_END = 1500;
-      const PAUSE_SWITCH = 450;
+    <!-- INICIO CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Contacto</h2>
+        </div>
 
-      function tick() {
-        const current = roles[roleIndex];
+        <div class="contact">
+          <div class="contact__card">
+            <h3>Hablemos</h3>
+            <div class="contact__links">
+              <a class="contact__link" href="mailto:sanzromerom@gmail.com">sanzromerom@gmail.com</a>
+              <a class="contact__link" href="tel:+34634567340">+34 634 567 340</a>
+              <a class="contact__link" href="https://www.linkedin.com/in/manuel-sanz-romero-6a8797320/" target="_blank"
+                rel="noopener">LinkedIn</a>
+              <a class="contact__link" href="https://github.com/Sanz-rm" target="_blank" rel="noopener">GitHub</a>
+              <a class="contact__link" href="https://www.youtube.com/@SanzDev17" target="_blank"
+                rel="noopener">YouTube</a>
+            </div>
+          </div>
 
-        if (!deleting) {
-          charIndex++;
-          typingEl.textContent = current.slice(0, charIndex);
+          <form class="form" action="#" method="post">
+            <label>
+              Nombre
+              <input type="text" name="name" placeholder="Tu nombre" required />
+            </label>
 
-          if (charIndex === current.length) {
-            deleting = true;
-            setTimeout(tick, PAUSE_END);
-            return;
-          }
-          setTimeout(tick, SPEED_TYPE);
-        } else {
-          charIndex--;
-          typingEl.textContent = current.slice(0, charIndex);
+            <label>
+              Email
+              <input type="email" name="email" placeholder="tu@email.com" required />
+            </label>
 
-          if (charIndex === 0) {
-            deleting = false;
-            roleIndex = (roleIndex + 1) % roles.length;
-            setTimeout(tick, PAUSE_SWITCH);
-            return;
-          }
-          setTimeout(tick, SPEED_DELETE);
+            <label>
+              Mensaje
+              <textarea name="message" rows="5" placeholder="Cuéntame en qué puedo ayudarte" required></textarea>
+            </label>
+
+            <button class="btn btn--primary" type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- FIN CONTACT -->
+  </main>
+
+  <!-- INICIO FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Manuel Sanz Romero · Portafolio</p>
+      <p class="muted">
+        Backend Developer · San Sebastián de los Reyes, Madrid
+      </p>
+    </div>
+  </footer>
+  <!-- FIN FOOTER -->
+
+  <a href="#top" class="to-top" id="toTop" aria-label="Volver arriba">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+
+  <!-- CONEXION EMAILJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- INICIO SCRIPT -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // INICIO EFECTO ESCRITURA
+    const roles = ["Backend", "Frontend", "Full Stack"];
+    const typingEl = document.getElementById("typing");
+
+    let roleIndex = 0;
+    let charIndex = 0;
+    let deleting = false;
+
+    const SPEED_TYPE = 110;
+    const SPEED_DELETE = 70;
+    const PAUSE_END = 1500;
+    const PAUSE_SWITCH = 450;
+
+    function tick() {
+      const current = roles[roleIndex];
+
+      if (!deleting) {
+        charIndex++;
+        typingEl.textContent = current.slice(0, charIndex);
+
+        if (charIndex === current.length) {
+          deleting = true;
+          setTimeout(tick, PAUSE_END);
+          return;
         }
+        setTimeout(tick, SPEED_TYPE);
+      } else {
+        charIndex--;
+        typingEl.textContent = current.slice(0, charIndex);
+
+        if (charIndex === 0) {
+          deleting = false;
+          roleIndex = (roleIndex + 1) % roles.length;
+          setTimeout(tick, PAUSE_SWITCH);
+          return;
+        }
+        setTimeout(tick, SPEED_DELETE);
       }
-      // FIN EFECTO ESCRITURA
+    }
+    // FIN EFECTO ESCRITURA
 
-      // INICIO CALCULADORA DE EXPERIENCIA
-      const START_DATE = "2024-08-17";
+    // INICIO CALCULADORA DE EXPERIENCIA
+    const START_DATE = "2024-08-17";
 
-      function calcExperienceFrom(startDateStr) {
-        const start = new Date(startDateStr);
-        const now = new Date();
+    function calcExperienceFrom(startDateStr) {
+      const start = new Date(startDateStr);
+      const now = new Date();
 
-        let totalMonths =
-          (now.getFullYear() - start.getFullYear()) * 12 +
-          (now.getMonth() - start.getMonth());
+      let totalMonths =
+        (now.getFullYear() - start.getFullYear()) * 12 +
+        (now.getMonth() - start.getMonth());
 
-        if (now.getDate() < start.getDate()) totalMonths--;
-        totalMonths = Math.max(0, totalMonths);
+      if (now.getDate() < start.getDate()) totalMonths--;
+      totalMonths = Math.max(0, totalMonths);
 
-        const y = Math.floor(totalMonths / 12);
-        const m = totalMonths % 12;
+      const y = Math.floor(totalMonths / 12);
+      const m = totalMonths % 12;
 
-        const parts = [];
-        
-        if (y > 0) parts.push(`<span class="counter" data-target="${y}">0</span> año${y !== 1 ? "s" : ""}`);
-        if (m > 0) parts.push(`<span class="counter" data-target="${m}">0</span> mes${m !== 1 ? "es" : ""}`);
+      const parts = [];
 
-        return parts.length ? parts.join(" y ") : `<span class="counter" data-target="0">0</span> meses`;
+      if (y > 0) parts.push(`<span class="counter" data-target="${y}">0</span> año${y !== 1 ? "s" : ""}`);
+      if (m > 0) parts.push(`<span class="counter" data-target="${m}">0</span> mes${m !== 1 ? "es" : ""}`);
+
+      return parts.length ? parts.join(" y ") : `<span class="counter" data-target="0">0</span> meses`;
+    }
+
+    const xpValueEl = document.getElementById("xpValue");
+    if (xpValueEl) xpValueEl.innerHTML = calcExperienceFrom(START_DATE);
+
+    const counters = document.querySelectorAll('.counter');
+    const speed = 300;
+
+    const animateCounters = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const counter = entry.target;
+          const target = +counter.getAttribute('data-target');
+
+          const updateCount = () => {
+            const count = +counter.innerText;
+            const inc = target / speed;
+
+            if (count < target) {
+              counter.innerText = Math.ceil(count + (inc > 1 ? inc : 1));
+              setTimeout(updateCount, 80);
+            } else {
+              counter.innerText = target;
+            }
+          };
+
+          updateCount();
+          observer.unobserve(counter);
+        }
+      });
+    };
+
+    const counterObserver = new IntersectionObserver(animateCounters, {
+      threshold: 0.5
+    });
+
+    counters.forEach(counter => {
+      counterObserver.observe(counter);
+    });
+
+    tick();
+    // FIN CALCULADORA DE EXPERIENCIA
+
+    // INICIO PROJECT FILTERS
+    (function initProjectFilters() {
+      const filterButtons = document.querySelectorAll(".projects__filter");
+      const grid = document.getElementById("projectsGrid");
+      const projects = Array.from(grid?.querySelectorAll(".project") || []);
+
+      if (!filterButtons.length || !grid || !projects.length) return;
+
+      const EXIT_MS = 220;
+
+      function setActive(btn) {
+        filterButtons.forEach((b) => b.classList.remove("is-active"));
+        btn.classList.add("is-active");
       }
 
-      const xpValueEl = document.getElementById("xpValue");
-      if (xpValueEl) xpValueEl.innerHTML = calcExperienceFrom(START_DATE);
-
-      const counters = document.querySelectorAll('.counter');
-      const speed = 300;
-
-      const animateCounters = (entries, observer) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            const counter = entry.target;
-            const target = +counter.getAttribute('data-target');
-            
-            const updateCount = () => {
-              const count = +counter.innerText;
-              const inc = target / speed;
-
-              if (count < target) {
-                counter.innerText = Math.ceil(count + (inc > 1 ? inc : 1));
-                setTimeout(updateCount, 80); 
-              } else {
-                counter.innerText = target;
-              }
-            };
-
-            updateCount();
-            observer.unobserve(counter); 
+      function getRects() {
+        const map = new Map();
+        projects.forEach((p) => {
+          if (!p.classList.contains("is-hidden")) {
+            map.set(p, p.getBoundingClientRect());
           }
         });
-      };
+        return map;
+      }
 
-      const counterObserver = new IntersectionObserver(animateCounters, {
-        threshold: 0.5 
-      });
+      function playFLIP(beforeRects) {
+        const afterRects = getRects();
 
-      counters.forEach(counter => {
-        counterObserver.observe(counter);
-      });
+        projects.forEach((p) => {
+          const before = beforeRects.get(p);
+          const after = afterRects.get(p);
+          if (!before || !after) return;
 
-      tick();
-      // FIN CALCULADORA DE EXPERIENCIA
+          const dx = before.left - after.left;
+          const dy = before.top - after.top;
 
-      // INICIO PROJECT FILTERS
-      (function initProjectFilters() {
-        const filterButtons = document.querySelectorAll(".projects__filter");
-        const grid = document.getElementById("projectsGrid");
-        const projects = Array.from(grid?.querySelectorAll(".project") || []);
+          if (dx === 0 && dy === 0) return;
 
-        if (!filterButtons.length || !grid || !projects.length) return;
+          p.style.transform = `translate(${dx}px, ${dy}px)`;
+          p.style.transition = "transform 0ms";
 
-        const EXIT_MS = 220;
-
-        function setActive(btn) {
-          filterButtons.forEach((b) => b.classList.remove("is-active"));
-          btn.classList.add("is-active");
-        }
-
-        function getRects() {
-          const map = new Map();
-          projects.forEach((p) => {
-            if (!p.classList.contains("is-hidden")) {
-              map.set(p, p.getBoundingClientRect());
-            }
+          requestAnimationFrame(() => {
+            p.style.transition =
+              "transform 380ms cubic-bezier(0.22, 1, 0.36, 1), opacity 200ms ease";
+            p.style.transform = "";
           });
-          return map;
-        }
+        });
+      }
 
-        function playFLIP(beforeRects) {
-          const afterRects = getRects();
+      function applyFilter(filter) {
+        const beforeRects = getRects();
 
-          projects.forEach((p) => {
-            const before = beforeRects.get(p);
-            const after = afterRects.get(p);
-            if (!before || !after) return;
+        projects.forEach((p) => {
+          const type = p.dataset.type;
+          const shouldShow = filter === "all" || type === filter;
 
-            const dx = before.left - after.left;
-            const dy = before.top - after.top;
+          if (!shouldShow && !p.classList.contains("is-hidden")) {
+            p.classList.add("is-exiting");
+          }
+        });
 
-            if (dx === 0 && dy === 0) return;
-
-            p.style.transform = `translate(${dx}px, ${dy}px)`;
-            p.style.transition = "transform 0ms";
-
-            requestAnimationFrame(() => {
-              p.style.transition =
-                "transform 380ms cubic-bezier(0.22, 1, 0.36, 1), opacity 200ms ease";
-              p.style.transform = "";
-            });
-          });
-        }
-
-        function applyFilter(filter) {
-          const beforeRects = getRects();
-
+        setTimeout(() => {
           projects.forEach((p) => {
             const type = p.dataset.type;
             const shouldShow = filter === "all" || type === filter;
 
-            if (!shouldShow && !p.classList.contains("is-hidden")) {
-              p.classList.add("is-exiting");
+            if (!shouldShow) {
+              p.classList.add("is-hidden");
+              p.classList.remove("is-exiting");
+            } else {
+              if (p.classList.contains("is-hidden"))
+                p.classList.remove("is-hidden");
+              p.classList.remove("is-exiting");
+              p.style.opacity = "1";
             }
           });
 
-          setTimeout(() => {
-            projects.forEach((p) => {
-              const type = p.dataset.type;
-              const shouldShow = filter === "all" || type === filter;
-
-              if (!shouldShow) {
-                p.classList.add("is-hidden");
-                p.classList.remove("is-exiting");
-              } else {
-                if (p.classList.contains("is-hidden"))
-                  p.classList.remove("is-hidden");
-                p.classList.remove("is-exiting");
-                p.style.opacity = "1";
-              }
-            });
-
-            playFLIP(beforeRects);
-          }, EXIT_MS);
-        }
-
-        filterButtons.forEach((btn) => {
-          btn.addEventListener("click", () => {
-            const filter = btn.dataset.filter || "all";
-            setActive(btn);
-            applyFilter(filter);
-          });
-        });
-
-        applyFilter("all");
-      })();
-      // FIN PROJECT FILTERS
-
-      // INICIO ANIMACIONES Y NAV
-      (function initMobileNav() {
-        const nav = document.querySelector(".nav");
-        const btn = document.querySelector(".nav__toggle");
-        const menu = document.getElementById("navMenu");
-        if (!nav || !btn || !menu) return;
-
-        const MOBILE_BP = 980;
-        const isMobile = () =>
-          window.matchMedia(`(max-width:${MOBILE_BP}px)`).matches;
-
-        function close() {
-          nav.classList.remove("is-open");
-          btn.setAttribute("aria-expanded", "false");
-          btn.setAttribute("aria-label", "Abrir menú");
-        }
-
-        function open() {
-          nav.classList.add("is-open");
-          btn.setAttribute("aria-expanded", "true");
-          btn.setAttribute("aria-label", "Cerrar menú");
-        }
-
-        btn.addEventListener("click", () => {
-          if (!isMobile()) return;
-          nav.classList.contains("is-open") ? close() : open();
-        });
-
-        menu.querySelectorAll("a").forEach((a) =>
-          a.addEventListener("click", () => {
-            if (isMobile()) close();
-          }),
-        );
-
-        document.addEventListener("click", (e) => {
-          if (!isMobile()) return;
-          if (!nav.classList.contains("is-open")) return;
-          if (!nav.contains(e.target)) close();
-        });
-
-        document.addEventListener("keydown", (e) => {
-          if (!isMobile()) return;
-          if (e.key === "Escape") close();
-        });
-
-        window.addEventListener("resize", () => {
-          if (!isMobile()) close();
-        });
-      })();
-      
-      (function initToTopButton() {
-        const btn = document.getElementById("toTop");
-        if (!btn) return;
-
-        const THRESHOLD = 80;
-
-        function update() {
-          const y = window.scrollY || document.documentElement.scrollTop;
-          btn.classList.toggle("is-visible", y > THRESHOLD);
-        }
-
-        update();
-        window.addEventListener("scroll", update, { passive: true });
-      })();
-
-      (function initToTopButton() {
-        const btn = document.getElementById("toTop");
-        if (!btn) return;
-
-        const THRESHOLD = 80;
-
-        function update() {
-          const y = window.scrollY || document.documentElement.scrollTop;
-          btn.classList.toggle("is-visible", y > THRESHOLD);
-        }
-
-        update();
-        window.addEventListener("scroll", update, { passive: true });
-      })();
-      // FIN ANIMACIONES Y NAV
-
-      // INICIO CONTACT FORM
-      (function() {
-        emailjs.init({
-          publicKey: "0-DwyXeCGJi1pF3lJ",
-        });
-      })();
-
-      const contactForm = document.querySelector('.form');
-      const submitBtn = contactForm.querySelector('button[type="submit"]');
-
-      if (contactForm) {
-        contactForm.addEventListener('submit', function(event) {
-          event.preventDefault(); 
-
-          const originalBtnText = submitBtn.textContent;
-          submitBtn.textContent = 'Enviando...';
-          submitBtn.disabled = true;
-
-          const serviceID = 'service_ozkgvgg'; 
-          const templateID = 'template_qnpvuiq'; 
-
-          emailjs.sendForm(serviceID, templateID, this)
-            .then(() => {
-              submitBtn.textContent = '¡Mensaje Enviado!';
-              submitBtn.style.backgroundColor = '#28a745'; 
-              submitBtn.style.borderColor = '#28a745';
-              contactForm.reset(); 
-              
-              setTimeout(() => {
-                submitBtn.textContent = originalBtnText;
-                submitBtn.style.backgroundColor = '';
-                submitBtn.style.borderColor = '';
-                submitBtn.disabled = false;
-              }, 3000);
-            }, (err) => {
-              submitBtn.textContent = 'Error al enviar';
-              submitBtn.style.backgroundColor = '#dc3545'; 
-              submitBtn.style.borderColor = '#dc3545';
-              console.log(JSON.stringify(err));
-              
-              setTimeout(() => {
-                submitBtn.textContent = originalBtnText;
-                submitBtn.style.backgroundColor = '';
-                submitBtn.style.borderColor = '';
-                submitBtn.disabled = false;
-              }, 3000);
-            });
-        });
+          playFLIP(beforeRects);
+        }, EXIT_MS);
       }
-      // FIN CONTACT FORM
-    </script>
-    <!-- FIN SCRIPT -->
-  </body>
+
+      filterButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const filter = btn.dataset.filter || "all";
+          setActive(btn);
+          applyFilter(filter);
+        });
+      });
+
+      applyFilter("all");
+    })();
+    // FIN PROJECT FILTERS
+
+    // INICIO ANIMACIONES Y NAV
+    (function initMobileNav() {
+      const nav = document.querySelector(".nav");
+      const btn = document.querySelector(".nav__toggle");
+      const menu = document.getElementById("navMenu");
+      if (!nav || !btn || !menu) return;
+
+      const MOBILE_BP = 980;
+      const isMobile = () =>
+        window.matchMedia(`(max-width:${MOBILE_BP}px)`).matches;
+
+      function close() {
+        nav.classList.remove("is-open");
+        btn.setAttribute("aria-expanded", "false");
+        btn.setAttribute("aria-label", "Abrir menú");
+      }
+
+      function open() {
+        nav.classList.add("is-open");
+        btn.setAttribute("aria-expanded", "true");
+        btn.setAttribute("aria-label", "Cerrar menú");
+      }
+
+      btn.addEventListener("click", () => {
+        if (!isMobile()) return;
+        nav.classList.contains("is-open") ? close() : open();
+      });
+
+      menu.querySelectorAll("a").forEach((a) =>
+        a.addEventListener("click", () => {
+          if (isMobile()) close();
+        }),
+      );
+
+      document.addEventListener("click", (e) => {
+        if (!isMobile()) return;
+        if (!nav.classList.contains("is-open")) return;
+        if (!nav.contains(e.target)) close();
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (!isMobile()) return;
+        if (e.key === "Escape") close();
+      });
+
+      window.addEventListener("resize", () => {
+        if (!isMobile()) close();
+      });
+    })();
+
+    (function initToTopButton() {
+      const btn = document.getElementById("toTop");
+      if (!btn) return;
+
+      const THRESHOLD = 80;
+
+      function update() {
+        const y = window.scrollY || document.documentElement.scrollTop;
+        btn.classList.toggle("is-visible", y > THRESHOLD);
+      }
+
+      update();
+      window.addEventListener("scroll", update, { passive: true });
+    })();
+
+    (function initToTopButton() {
+      const btn = document.getElementById("toTop");
+      if (!btn) return;
+
+      const THRESHOLD = 80;
+
+      function update() {
+        const y = window.scrollY || document.documentElement.scrollTop;
+        btn.classList.toggle("is-visible", y > THRESHOLD);
+      }
+
+      update();
+      window.addEventListener("scroll", update, { passive: true });
+    })();
+    // FIN ANIMACIONES Y NAV
+
+    // INICIO CONTACT FORM
+    (function () {
+      emailjs.init({
+        publicKey: "0-DwyXeCGJi1pF3lJ",
+      });
+    })();
+
+    const contactForm = document.querySelector('.form');
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+
+    if (contactForm) {
+      contactForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const originalBtnText = submitBtn.textContent;
+        submitBtn.textContent = 'Enviando...';
+        submitBtn.disabled = true;
+
+        const serviceID = 'service_ozkgvgg';
+        const templateID = 'template_qnpvuiq';
+
+        emailjs.sendForm(serviceID, templateID, this)
+          .then(() => {
+            submitBtn.textContent = '¡Mensaje Enviado!';
+            submitBtn.style.backgroundColor = '#28a745';
+            submitBtn.style.borderColor = '#28a745';
+            contactForm.reset();
+
+            setTimeout(() => {
+              submitBtn.textContent = originalBtnText;
+              submitBtn.style.backgroundColor = '';
+              submitBtn.style.borderColor = '';
+              submitBtn.disabled = false;
+            }, 3000);
+          }, (err) => {
+            submitBtn.textContent = 'Error al enviar';
+            submitBtn.style.backgroundColor = '#dc3545';
+            submitBtn.style.borderColor = '#dc3545';
+            console.log(JSON.stringify(err));
+
+            setTimeout(() => {
+              submitBtn.textContent = originalBtnText;
+              submitBtn.style.backgroundColor = '';
+              submitBtn.style.borderColor = '';
+              submitBtn.disabled = false;
+            }, 3000);
+          });
+      });
+    }
+    // FIN CONTACT FORM
+  </script>
+  <!-- FIN SCRIPT -->
+</body>
+
 </html>

@@ -7,6 +7,7 @@
   <title>Manuel Sanz Romero | Portfolio</title>
   <meta name="description"
     content="Portfolio de Manuel Sanz Romero: proyectos, experiencia, formación, certificados y contacto." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
@@ -152,7 +153,7 @@
                 <i class="bi bi-diagram-3"></i>
               </div>
               <div class="kpi__content">
-                <div class="kpi__value"><span class="counter" data-target="7">0</span>+</div>
+                <div class="kpi__value"><span class="counter" data-target="8">0</span>+</div>
                 <div class="kpi__label">Proyectos publicados</div>
               </div>
             </article>
@@ -189,7 +190,7 @@
 
                 <div class="resume__card">
                   <h4 class="resume__role">Desarrollador Java / Spring Boot</h4>
-                  <span class="resume__date">May 2026 - Actualidad</span>
+                  <span class="resume__date">May 2026 - Actualidad (<span id="currentJobDuration">—</span>)</span>
 
                   <p class="resume__company">
                     Cobser Consulting · Sopra HR Software · Madrid
@@ -454,6 +455,31 @@
         </div>
 
         <div class="projects" id="projectsGrid">
+          <article class="project" data-type="profesional">
+            <div class="project__thumb project__thumb--full">
+              <img class="project__thumb-img project__thumb-img--tall" src="assets/aquatrack_miniatura.png"
+                alt="Miniatura del proyecto AquaTrack" loading="lazy" />
+            </div>
+            <div class="project__body">
+              <h3>AquaTrack</h3>
+              <p>Aplicación para digitalizar el muestreo de residuos en aguas marinas, playas, ríos y lagos. Permite
+                trabajar sin conexión, registrar evidencias y coordenadas, y generar informes XLSX listos para compartir.</p>
+              <div class="tags">
+                <span class="tag"><i class="devicon-angularjs-plain" aria-hidden="true"></i>Angular</span>
+                <span class="tag"><i class="devicon-typescript-plain" aria-hidden="true"></i>TypeScript</span>
+                <span class="tag"><i class="bi bi-phone" aria-hidden="true"></i>Capacitor</span>
+                <span class="tag"><i class="bi bi-database" aria-hidden="true"></i>SQLite</span>
+                <span class="tag"><i class="bi bi-file-earmark-spreadsheet" aria-hidden="true"></i>ExcelJS</span>
+              </div>
+              <div class="project__links">
+                <a class="btn btn--small btn--primary" href="https://aquatrackwb.netlify.app/" target="_blank"
+                  rel="noopener">Más info</a>
+                <a class="btn btn--small" href="https://github.com/Sanz-rm/AquaTrack" target="_blank"
+                  rel="noopener">Código</a>
+              </div>
+            </div>
+          </article>
+
           <article class="project" data-type="personal">
             <div class="project__thumb project__thumb--full">
               <img class="project__thumb-img project__thumb-img--tall" src="assets/midespensa_miniatura.png"
@@ -468,6 +494,7 @@
                 <span class="tag"><i class="devicon-ionic-original" aria-hidden="true"></i>Ionic</span>
                 <span class="tag"><i class="devicon-vuejs-plain" aria-hidden="true"></i>Vue</span>
                 <span class="tag"><i class="devicon-typescript-plain" aria-hidden="true"></i>TypeScript</span>
+                <span class="tag"><i class="bi bi-phone" aria-hidden="true"></i>Capacitor</span>
                 <span class="tag"><i class="devicon-firebase-plain" aria-hidden="true"></i>Firebase</span>
               </div>
               <div class="project__links">
@@ -821,6 +848,7 @@
 
     // INICIO CALCULADORA DE EXPERIENCIA
     const START_DATE = "2024-08-17";
+    const CURRENT_JOB_START_DATE = "2026-05-01";
 
     function calcExperienceFrom(startDateStr) {
       const start = new Date(startDateStr);
@@ -846,6 +874,9 @@
 
     const xpValueEl = document.getElementById("xpValue");
     if (xpValueEl) xpValueEl.innerHTML = calcExperienceFrom(START_DATE);
+
+    const currentJobDurationEl = document.getElementById("currentJobDuration");
+    if (currentJobDurationEl) currentJobDurationEl.innerHTML = calcExperienceFrom(CURRENT_JOB_START_DATE);
 
     const counters = document.querySelectorAll('.counter');
     const speed = 300;
